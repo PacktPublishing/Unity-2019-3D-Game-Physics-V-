@@ -51,12 +51,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05
 				return; // do nothing if the automatic simulation is enabled
 			}
 
-			// Reload Scene		------------------------------------
-			if (Input.GetKey(KeyCode.R))
-			{
-				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-			}
-
 			// Time Dilation	------------------------------------
 			if (Input.GetKey(KeyCode.LeftShift))
 			{
