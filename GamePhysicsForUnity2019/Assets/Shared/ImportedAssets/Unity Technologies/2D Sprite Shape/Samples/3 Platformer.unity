@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 4501261}
   - component: {fileID: 4501260}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -186,8 +186,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -208,7 +208,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -871,6 +870,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &25886065
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +882,7 @@ GameObject:
   - component: {fileID: 25886066}
   - component: {fileID: 25886068}
   - component: {fileID: 25886067}
+  - component: {fileID: 25886069}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -897,7 +898,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25886065}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.29, y: -6.19, z: 1.42}
+  m_LocalPosition: {x: 10.29, y: -2.29, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 2011677551}
@@ -938,8 +939,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -960,7 +961,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -1560,6 +1560,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &25886069
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25886065}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &29679715
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,7 +1584,7 @@ GameObject:
   - component: {fileID: 29679718}
   - component: {fileID: 29679717}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1626,8 +1638,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -1648,7 +1660,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -2311,6 +2322,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &34753519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,7 +2353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 1
     m_ControlPoints:
@@ -2473,6 +2484,7 @@ MonoBehaviour:
   m_ColliderOffset: 0.473
   m_UpdateCollider: 1
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1971053207 &34753521
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0
@@ -2507,9 +2519,9 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -540696953
-  m_SortingLayer: 4
-  m_SortingOrder: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 6
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
@@ -2544,7 +2556,7 @@ GameObject:
   - component: {fileID: 59143519}
   - component: {fileID: 59143518}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2598,8 +2610,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -2620,7 +2632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -3283,6 +3294,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &78273745
 GameObject:
   m_ObjectHideFlags: 0
@@ -3294,6 +3306,7 @@ GameObject:
   - component: {fileID: 78273746}
   - component: {fileID: 78273748}
   - component: {fileID: 78273747}
+  - component: {fileID: 78273749}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -3309,7 +3322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78273745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.79, y: -5.72, z: 1.42}
+  m_LocalPosition: {x: -10.79, y: -1.8199997, z: 1.42}
   m_LocalScale: {x: 0.89092064, y: 0.89092064, z: 0.89092064}
   m_Children:
   - {fileID: 1339511685}
@@ -3350,8 +3363,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -3372,7 +3385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -3972,6 +3984,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &78273749
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78273745}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &151788793
 GameObject:
   m_ObjectHideFlags: 0
@@ -3983,6 +4007,7 @@ GameObject:
   - component: {fileID: 151788794}
   - component: {fileID: 151788796}
   - component: {fileID: 151788795}
+  - component: {fileID: 151788797}
   m_Layer: 0
   m_Name: Tree B
   m_TagString: Untagged
@@ -3998,7 +4023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151788793}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.72, y: -5.54, z: 0}
+  m_LocalPosition: {x: 4.72, y: -1.56, z: 0}
   m_LocalScale: {x: 0.9812116, y: 0.9812116, z: 0.9812116}
   m_Children:
   - {fileID: 739625615}
@@ -4039,8 +4064,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1239860327
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -4061,7 +4086,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -4427,6 +4451,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &151788797
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151788793}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &173102064
 GameObject:
   m_ObjectHideFlags: 0
@@ -4439,7 +4475,7 @@ GameObject:
   - component: {fileID: 173102067}
   - component: {fileID: 173102066}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4493,8 +4529,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -4515,7 +4551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -5178,6 +5213,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &217255371
 GameObject:
   m_ObjectHideFlags: 0
@@ -5187,6 +5223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 217255372}
+  - component: {fileID: 217255373}
   m_Layer: 0
   m_Name: Trees A
   m_TagString: Untagged
@@ -5202,7 +5239,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217255371}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.51, y: 5.21, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 936688497}
@@ -5212,6 +5249,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &217255373
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217255371}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
 --- !u!1 &220145343
 GameObject:
   m_ObjectHideFlags: 0
@@ -5224,7 +5272,7 @@ GameObject:
   - component: {fileID: 220145346}
   - component: {fileID: 220145345}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree B Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5278,8 +5326,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1239860327
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -68
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -5300,7 +5348,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -5621,6 +5668,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &226413387
 GameObject:
   m_ObjectHideFlags: 0
@@ -5632,6 +5680,7 @@ GameObject:
   - component: {fileID: 226413388}
   - component: {fileID: 226413390}
   - component: {fileID: 226413389}
+  - component: {fileID: 226413391}
   m_Layer: 0
   m_Name: Tree B
   m_TagString: Untagged
@@ -5647,7 +5696,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226413387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.67, y: -5.44, z: 0}
+  m_LocalPosition: {x: 13.67, y: -1.4600003, z: 0}
   m_LocalScale: {x: 0.85662717, y: 0.85662717, z: 0.85662717}
   m_Children:
   - {fileID: 220145344}
@@ -5688,8 +5737,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1239860327
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -5710,7 +5759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -6076,6 +6124,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &226413391
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226413387}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &255668688
 GameObject:
   m_ObjectHideFlags: 0
@@ -6088,7 +6148,7 @@ GameObject:
   - component: {fileID: 255668691}
   - component: {fileID: 255668690}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree B Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6142,8 +6202,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1239860327
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -68
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -6164,7 +6224,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -6485,6 +6544,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &258690430
 GameObject:
   m_ObjectHideFlags: 0
@@ -6497,7 +6557,7 @@ GameObject:
   - component: {fileID: 258690433}
   - component: {fileID: 258690432}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree B Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6551,8 +6611,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1239860327
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -68
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -6573,7 +6633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -6894,6 +6953,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &263283931
 GameObject:
   m_ObjectHideFlags: 0
@@ -6905,6 +6965,7 @@ GameObject:
   - component: {fileID: 263283932}
   - component: {fileID: 263283934}
   - component: {fileID: 263283933}
+  - component: {fileID: 263283935}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -6920,7 +6981,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263283931}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.67, y: -6.11, z: 1.42}
+  m_LocalPosition: {x: 15.67, y: -2.21, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 4501259}
@@ -6961,8 +7022,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -6983,7 +7044,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -7583,6 +7643,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &263283935
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263283931}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &286644244
 GameObject:
   m_ObjectHideFlags: 0
@@ -7594,6 +7666,7 @@ GameObject:
   - component: {fileID: 286644245}
   - component: {fileID: 286644247}
   - component: {fileID: 286644246}
+  - component: {fileID: 286644248}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -7609,7 +7682,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286644244}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.66, y: -6.16, z: 1.42}
+  m_LocalPosition: {x: 3.66, y: -2.2599998, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 59143517}
@@ -7650,8 +7723,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -7672,7 +7745,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -8272,6 +8344,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &286644248
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286644244}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &288543830
 GameObject:
   m_ObjectHideFlags: 0
@@ -8283,6 +8367,7 @@ GameObject:
   - component: {fileID: 288543831}
   - component: {fileID: 288543833}
   - component: {fileID: 288543832}
+  - component: {fileID: 288543834}
   m_Layer: 0
   m_Name: Tree B
   m_TagString: Untagged
@@ -8298,7 +8383,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288543830}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.43, y: -6.38, z: 0}
+  m_LocalPosition: {x: -4.43, y: -2.4000003, z: 0}
   m_LocalScale: {x: 0.69838667, y: 0.69838667, z: 0.69838667}
   m_Children:
   - {fileID: 258690431}
@@ -8339,8 +8424,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1239860327
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -8361,7 +8446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -8727,6 +8811,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &288543834
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288543830}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &309034923
 GameObject:
   m_ObjectHideFlags: 0
@@ -8771,39 +8867,66 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -9.630971, y: 1.0968223}
-      - {x: -9.673544, y: 0.24794742}
-      - {x: -9.663223, y: -1.7598972}
-      - {x: -9.534466, y: -6.1987305}
-      - {x: -9.469921, y: -7.8282866}
-      - {x: -9.6546545, y: -8.019127}
-      - {x: -15.9727545, y: -7.96226}
-      - {x: -16.18925, y: -7.699564}
-      - {x: -15.763002, y: -5.2228312}
-      - {x: -15.46253, y: -3.143259}
-      - {x: -15.287657, y: -1.6511714}
-      - {x: -15.168415, y: -0.21441513}
-      - {x: -15.133921, y: 1.0362526}
-      - {x: -15.213411, y: 1.7842851}
-      - {x: -15.40892, y: 2.5805593}
-      - {x: -15.833157, y: 3.749773}
-      - {x: -16.679434, y: 5.468053}
-      - {x: -16.855192, y: 5.7707233}
-      - {x: -16.905094, y: 6.1292667}
-      - {x: -15.227807, y: 6.3573685}
-      - {x: -13.723925, y: 6.4375467}
-      - {x: -12.454015, y: 6.3856497}
-      - {x: -11.592049, y: 6.243164}
-      - {x: -10.831072, y: 6.050173}
-      - {x: -9.676188, y: 5.64291}
-      - {x: -7.4571157, y: 4.613763}
-      - {x: -6.9294553, y: 4.32815}
-      - {x: -7.13978, y: 3.8983023}
-      - {x: -8.163703, y: 3.275284}
-      - {x: -8.912199, y: 2.6472409}
-      - {x: -9.302887, y: 2.1287293}
-      - {x: -9.552162, y: 1.5315917}
-      - {x: -9.630971, y: 1.0968207}
+    - - {x: 3.0250463, y: 0.9507808}
+      - {x: 3.0030367, y: 0.61795557}
+      - {x: 2.990002, y: 0.13971052}
+      - {x: 2.985929, y: -0.45136473}
+      - {x: 2.9897914, y: -1.1287277}
+      - {x: 3.0162053, y: -2.646098}
+      - {x: 3.0825987, y: -4.9802184}
+      - {x: 3.179102, y: -7.586825}
+      - {x: 3.1936255, y: -7.9365234}
+      - {x: 3.008885, y: -8.127368}
+      - {x: -3.3092043, y: -8.070499}
+      - {x: -3.5257041, y: -7.807804}
+      - {x: -3.2809, y: -6.4396276}
+      - {x: -3.099454, y: -5.3310676}
+      - {x: -2.8978481, y: -3.9806426}
+      - {x: -2.7989843, y: -3.2514956}
+      - {x: -2.624112, y: -1.759408}
+      - {x: -2.5556655, y: -1.0264643}
+      - {x: -2.5048695, y: -0.32265204}
+      - {x: -2.4753547, y: 0.33615062}
+      - {x: -2.470376, y: 0.92801523}
+      - {x: -2.4935992, y: 1.2950448}
+      - {x: -2.549866, y: 1.6760496}
+      - {x: -2.6353729, y: 2.071072}
+      - {x: -2.7453732, y: 2.4723222}
+      - {x: -2.915644, y: 2.9842463}
+      - {x: -3.1696107, y: 3.6415355}
+      - {x: -3.4758747, y: 4.325003}
+      - {x: -3.8584857, y: 5.078388}
+      - {x: -4.1916447, y: 5.6625}
+      - {x: -4.2415433, y: 6.02104}
+      - {x: -3.3461955, y: 6.160091}
+      - {x: -2.5642607, y: 6.249132}
+      - {x: -1.8584745, y: 6.3024793}
+      - {x: -1.0603778, y: 6.32931}
+      - {x: -0.6411891, y: 6.3268137}
+      - {x: -0.21607688, y: 6.310396}
+      - {x: 0.20953158, y: 6.277413}
+      - {x: 0.6304322, y: 6.2249923}
+      - {x: 1.0402049, y: 6.1502285}
+      - {x: 1.4359834, y: 6.0548553}
+      - {x: 1.8324744, y: 5.9419365}
+      - {x: 2.2257497, y: 5.8152137}
+      - {x: 2.61203, y: 5.6782804}
+      - {x: 3.347643, y: 5.387919}
+      - {x: 4.0063167, y: 5.0989933}
+      - {x: 4.7752643, y: 4.729692}
+      - {x: 5.206425, y: 4.505529}
+      - {x: 5.7340894, y: 4.219923}
+      - {x: 5.523766, y: 3.7900662}
+      - {x: 4.966995, y: 3.4662204}
+      - {x: 4.499846, y: 3.1670477}
+      - {x: 4.093342, y: 2.85955}
+      - {x: 3.7513459, y: 2.5390031}
+      - {x: 3.4748487, y: 2.199769}
+      - {x: 3.2620914, y: 1.8327029}
+      - {x: 3.1789637, y: 1.6344026}
+      - {x: 3.1113846, y: 1.4233558}
+      - {x: 3.059826, y: 1.1972514}
+      - {x: 3.0250463, y: 0.95078075}
 --- !u!114 &309034925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8816,11 +8939,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -10.151699, y: 1.1150903, z: 0}
+    - position: {x: 2.5118475, y: 1.0068536, z: 0}
       leftTangent: {x: 0.15024757, y: 1.4633666, z: 0}
       rightTangent: {x: -0.15024757, y: -1.4633666, z: 0}
       mode: 2
@@ -8829,7 +8951,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: -10, y: -7.5, z: 0}
+    - position: {x: 2.6635466, y: -7.608237, z: 0}
       leftTangent: {x: 2.1658692, y: 1.2717664, z: 0}
       rightTangent: {x: -2.1348014, y: -1.253524, z: 0}
       mode: 0
@@ -8838,7 +8960,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: -15.61812, y: -7.4494333, z: 0}
+    - position: {x: -2.9545746, y: -7.55767, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -8847,7 +8969,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: -14.61812, y: 1.0505669, z: 0}
+    - position: {x: -1.9545746, y: 0.94233024, z: 0}
       leftTangent: {x: 0.044664383, y: -2.9358013, z: 0}
       rightTangent: {x: -0.030313492, y: 1.9925003, z: 0}
       mode: 1
@@ -8856,7 +8978,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: -16.233212, y: 5.7271686, z: 0}
+    - position: {x: -3.569666, y: 5.6189322, z: 0}
       leftTangent: {x: 1.4493587, y: -1.0680176, z: 0}
       rightTangent: {x: -1.8886337, y: 1.3917145, z: 0}
       mode: 0
@@ -8865,7 +8987,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: -11.729388, y: 5.76664, z: 0}
+    - position: {x: 0.9341588, y: 5.658404, z: 0}
       leftTangent: {x: -1.8514233, y: 0.40062523, z: 0}
       rightTangent: {x: 1.8514233, y: -0.40062523, z: 0}
       mode: 2
@@ -8874,7 +8996,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-    - position: {x: -7.6966014, y: 4.171319, z: 0}
+    - position: {x: 4.966945, y: 4.063082, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: -1.3543115, y: -0.76698637, z: 0}
       mode: 2
@@ -8894,6 +9016,7 @@ MonoBehaviour:
   m_ColliderOffset: 0.43
   m_UpdateCollider: 1
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1971053207 &309034926
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0
@@ -8928,9 +9051,9 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -540696953
-  m_SortingLayer: 4
-  m_SortingOrder: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 3bab026df42df40a5a6b43d96aac577a, type: 3}
@@ -8938,8 +9061,8 @@ SpriteShapeRenderer:
   - {fileID: 1887494081247492234, guid: d501f6d7fa84c4038b7449696f44ff38, type: 3}
   - {fileID: -4069628985407814602, guid: a4fef30bb3ca5463a9c33c123a81604a, type: 3}
   m_LocalAABB:
-    m_Center: {x: -8.463916, y: -0.7918396, z: -0.005025}
-    m_Extent: {x: 8.463916, y: 7.311284, z: 0.005025}
+    m_Center: {x: 0.75439405, y: -0.9000788, z: -0.005025}
+    m_Extent: {x: 5.0186806, y: 7.311286, z: 0.005025}
 --- !u!4 &309034927
 Transform:
   m_ObjectHideFlags: 0
@@ -8948,7 +9071,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309034923}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -13, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8966,7 +9089,7 @@ GameObject:
   - component: {fileID: 316794815}
   - component: {fileID: 316794814}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree B Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9020,8 +9143,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1239860327
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -68
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -9042,7 +9165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -9363,6 +9485,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &390541823
 GameObject:
   m_ObjectHideFlags: 0
@@ -9375,7 +9498,7 @@ GameObject:
   - component: {fileID: 390541826}
   - component: {fileID: 390541825}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree A Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9429,8 +9552,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -887166939
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -46
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -9451,7 +9574,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -10114,6 +10236,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &394561372
 GameObject:
   m_ObjectHideFlags: 0
@@ -10145,7 +10268,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -10205,6 +10327,7 @@ MonoBehaviour:
   m_ColliderOffset: 0.43
   m_UpdateCollider: 1
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1971053207 &394561374
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0
@@ -10239,9 +10362,9 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -540696953
-  m_SortingLayer: 4
-  m_SortingOrder: -1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 3bab026df42df40a5a6b43d96aac577a, type: 3}
@@ -10293,24 +10416,46 @@ PolygonCollider2D:
     - - {x: 2.7286763, y: -3.143724}
       - {x: -3.097855, y: -3.0446234}
       - {x: -3.3021674, y: -2.8065188}
-      - {x: -2.9848747, y: -0.7360344}
+      - {x: -3.0439568, y: -1.1385807}
+      - {x: -2.9364457, y: -0.35156417}
+      - {x: -2.9019058, y: 0.01545863}
       - {x: -2.8845472, y: 0.38736376}
+      - {x: -2.88606, y: 0.7003027}
       - {x: -2.9098508, y: 1.0205188}
+      - {x: -2.957939, y: 1.3284982}
       - {x: -3.0328977, y: 1.6271065}
+      - {x: -3.1378975, y: 1.919848}
       - {x: -3.2769506, y: 2.2104557}
+      - {x: -3.4548745, y: 2.502341}
       - {x: -3.8867638, y: 3.0777774}
       - {x: -3.9247196, y: 3.5737903}
+      - {x: -2.9957583, y: 3.6560476}
       - {x: -2.3633475, y: 3.6950462}
-      - {x: -0.9198514, y: 3.683951}
-      - {x: 0.40410733, y: 3.5327578}
+      - {x: -1.7655398, y: 3.7086844}
+      - {x: -1.1959714, y: 3.698028}
+      - {x: -0.64850247, y: 3.664249}
+      - {x: -0.11713877, y: 3.6086662}
+      - {x: 0.6628432, y: 3.4876764}
+      - {x: 0.92185074, y: 3.4380186}
+      - {x: 1.1874232, y: 3.3820384}
       - {x: 2.0318947, y: 3.1770186}
+      - {x: 3.110953, y: 2.8787615}
       - {x: 4.0912185, y: 2.5837224}
       - {x: 4.6636047, y: 2.4037926}
       - {x: 4.5136185, y: 1.9143988}
+      - {x: 4.109991, y: 1.5726824}
       - {x: 3.976213, y: 1.4276077}
+      - {x: 3.845628, y: 1.2519083}
+      - {x: 3.7199833, y: 1.0462233}
       - {x: 3.600834, y: 0.81198883}
+      - {x: 3.4893827, y: 0.5510837}
+      - {x: 3.386478, y: 0.26559067}
       - {x: 3.2926774, y: -0.042339005}
+      - {x: 3.2083104, y: -0.37056005}
+      - {x: 3.133543, y: -0.7169606}
       - {x: 3.068419, y: -1.0794746}
+      - {x: 3.0128975, y: -1.4560796}
+      - {x: 2.9668736, y: -1.8447963}
       - {x: 2.930199, y: -2.2436788}
       - {x: 2.9023285, y: -2.6566389}
       - {x: 2.8790958, y: -2.9999025}
@@ -10345,11 +10490,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -1.1813985, y: -0.3232031, z: 0}
+    - position: {x: -1.0731622, y: -4.003207, z: 0}
       leftTangent: {x: 5.1672316, y: -0.0071132183, z: 0}
       rightTangent: {x: -4.3504725, y: 0.0059888363, z: 0}
       mode: 1
@@ -10358,7 +10502,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: -10.805702, y: -3.5495007, z: 0}
+    - position: {x: -10.697466, y: -7.2295046, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -10367,7 +10511,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: -10.843496, y: 2.3779273, z: 0}
+    - position: {x: -10.73526, y: -1.302077, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -10376,7 +10520,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: -3.434145, y: 1.6891667, z: 0}
+    - position: {x: -3.3259087, y: -1.9908376, z: 0}
       leftTangent: {x: -2.9361215, y: 0.010605335, z: 0}
       rightTangent: {x: 4.143947, y: -0.014967918, z: 0}
       mode: 1
@@ -10385,7 +10529,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 13.134333, y: 2.0310335, z: 0}
+    - position: {x: 13.242569, y: -1.6489708, z: 0}
       leftTangent: {x: -3.841302, y: 3.1487699, z: 0}
       rightTangent: {x: -0.38798904, y: -2.0748296, z: 0}
       mode: 2
@@ -10394,7 +10538,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 11.599348, y: -3.2093647, z: 0}
+    - position: {x: 11.707584, y: -6.889369, z: 0}
       leftTangent: {x: 2.4809856, y: 2.3652925, z: 0}
       rightTangent: {x: -2.4809856, y: -2.3652928, z: 0}
       mode: 1
@@ -10414,6 +10558,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 1
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1971053207 &476473965
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0
@@ -10448,9 +10593,9 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -540696953
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 4
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 3bab026df42df40a5a6b43d96aac577a, type: 3}
@@ -10458,7 +10603,7 @@ SpriteShapeRenderer:
   - {fileID: 1887494081247492234, guid: d501f6d7fa84c4038b7449696f44ff38, type: 3}
   - {fileID: -4069628985407814602, guid: a4fef30bb3ca5463a9c33c123a81604a, type: 3}
   m_LocalAABB:
-    m_Center: {x: 1.2417164, y: -0.24717522, z: -0.005015}
+    m_Center: {x: 1.3499527, y: -3.9271798, z: -0.005015}
     m_Extent: {x: 12.765057, y: 4.170549, z: 0.005015}
 --- !u!4 &476473966
 Transform:
@@ -10468,7 +10613,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476473963}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3749073, y: -3.625828, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10486,7 +10631,7 @@ GameObject:
   - component: {fileID: 568635850}
   - component: {fileID: 568635849}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10540,8 +10685,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -10562,7 +10707,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -11225,6 +11369,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &611676648
 GameObject:
   m_ObjectHideFlags: 0
@@ -11236,6 +11381,7 @@ GameObject:
   - component: {fileID: 611676649}
   - component: {fileID: 611676651}
   - component: {fileID: 611676650}
+  - component: {fileID: 611676652}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -11251,7 +11397,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611676648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.66, y: -5.67, z: 1.42}
+  m_LocalPosition: {x: -8.66, y: -1.77, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 568635848}
@@ -11292,8 +11438,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -11314,7 +11460,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -11914,6 +12059,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &611676652
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611676648}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &635919995
 GameObject:
   m_ObjectHideFlags: 0
@@ -11925,6 +12082,7 @@ GameObject:
   - component: {fileID: 635919996}
   - component: {fileID: 635919998}
   - component: {fileID: 635919997}
+  - component: {fileID: 635919999}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -11940,7 +12098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635919995}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.71, y: -5.77, z: 1.42}
+  m_LocalPosition: {x: 5.71, y: -1.8699999, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 1943032838}
@@ -11981,8 +12139,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -12003,7 +12161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -12603,6 +12760,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &635919999
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635919995}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &693693578
 GameObject:
   m_ObjectHideFlags: 0
@@ -12614,6 +12783,7 @@ GameObject:
   - component: {fileID: 693693579}
   - component: {fileID: 693693581}
   - component: {fileID: 693693580}
+  - component: {fileID: 693693582}
   m_Layer: 0
   m_Name: Tree A
   m_TagString: Untagged
@@ -12629,7 +12799,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693693578}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.1199985, y: -6.3, z: 0}
+  m_LocalPosition: {x: -5.1199985, y: -1.9700003, z: 0}
   m_LocalScale: {x: 0.7146551, y: 0.7146551, z: 0.7146551}
   m_Children:
   - {fileID: 2146085262}
@@ -12670,8 +12840,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -887166939
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -12692,7 +12862,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -13292,6 +13461,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &693693582
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693693578}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &739625614
 GameObject:
   m_ObjectHideFlags: 0
@@ -13304,7 +13485,7 @@ GameObject:
   - component: {fileID: 739625617}
   - component: {fileID: 739625616}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree B Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13358,8 +13539,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1239860327
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -68
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -13380,7 +13561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -13701,6 +13881,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &861329491
 GameObject:
   m_ObjectHideFlags: 0
@@ -13712,6 +13893,7 @@ GameObject:
   - component: {fileID: 861329492}
   - component: {fileID: 861329494}
   - component: {fileID: 861329493}
+  - component: {fileID: 861329495}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -13727,7 +13909,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861329491}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.18, y: -5.43, z: 1.42}
+  m_LocalPosition: {x: -5.18, y: -1.5299997, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 906611947}
@@ -13768,8 +13950,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -13790,7 +13972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -14390,6 +14571,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &861329495
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861329491}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &906611946
 GameObject:
   m_ObjectHideFlags: 0
@@ -14402,7 +14595,7 @@ GameObject:
   - component: {fileID: 906611949}
   - component: {fileID: 906611948}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14456,8 +14649,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -14478,7 +14671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -15141,6 +15333,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &917189143
 GameObject:
   m_ObjectHideFlags: 0
@@ -15152,6 +15345,7 @@ GameObject:
   - component: {fileID: 917189146}
   - component: {fileID: 917189145}
   - component: {fileID: 917189144}
+  - component: {fileID: 917189147}
   m_Layer: 0
   m_Name: Tree B
   m_TagString: Untagged
@@ -15193,8 +15387,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1239860327
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -15215,7 +15409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -15581,6 +15774,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!4 &917189146
 Transform:
   m_ObjectHideFlags: 0
@@ -15589,13 +15783,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917189143}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.81, y: -6.51, z: 0}
+  m_LocalPosition: {x: -12.81, y: -2.5300004, z: 0}
   m_LocalScale: {x: 0.7568043, y: 0.7568043, z: 0.7568043}
   m_Children:
   - {fileID: 1085396596}
   m_Father: {fileID: 2056216027}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &917189147
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917189143}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &936688496
 GameObject:
   m_ObjectHideFlags: 0
@@ -15607,6 +15812,7 @@ GameObject:
   - component: {fileID: 936688497}
   - component: {fileID: 936688499}
   - component: {fileID: 936688498}
+  - component: {fileID: 936688500}
   m_Layer: 0
   m_Name: Tree A
   m_TagString: Untagged
@@ -15622,7 +15828,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936688496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.95, y: -6.3, z: 0}
+  m_LocalPosition: {x: -15.95, y: -1.97, z: 0}
   m_LocalScale: {x: 0.9748, y: 0.9748, z: 0.9748}
   m_Children:
   - {fileID: 1501966455}
@@ -15663,8 +15869,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -887166939
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -15685,7 +15891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -16285,6 +16490,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &936688500
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936688496}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &979700884
 GameObject:
   m_ObjectHideFlags: 0
@@ -16296,6 +16513,7 @@ GameObject:
   - component: {fileID: 979700885}
   - component: {fileID: 979700887}
   - component: {fileID: 979700886}
+  - component: {fileID: 979700888}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -16311,7 +16529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979700884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.27, y: -5.3, z: 1.42}
+  m_LocalPosition: {x: 7.27, y: -1.4000001, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 29679716}
@@ -16352,8 +16570,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -16374,7 +16592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -16974,6 +17191,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &979700888
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979700884}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1085396595
 GameObject:
   m_ObjectHideFlags: 0
@@ -16986,7 +17215,7 @@ GameObject:
   - component: {fileID: 1085396598}
   - component: {fileID: 1085396597}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree B Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17040,8 +17269,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1239860327
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -68
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -17062,7 +17291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -17383,6 +17611,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &1108512468
 GameObject:
   m_ObjectHideFlags: 0
@@ -17394,6 +17623,7 @@ GameObject:
   - component: {fileID: 1108512469}
   - component: {fileID: 1108512471}
   - component: {fileID: 1108512470}
+  - component: {fileID: 1108512472}
   m_Layer: 0
   m_Name: Tree A
   m_TagString: Untagged
@@ -17409,7 +17639,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108512468}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.08, y: -6.3, z: 0}
+  m_LocalPosition: {x: 15.08, y: -1.9700003, z: 0}
   m_LocalScale: {x: 0.67880195, y: 0.67880195, z: 0.67880195}
   m_Children:
   - {fileID: 390541824}
@@ -17450,8 +17680,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -887166939
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -17472,7 +17702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -18072,6 +18301,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &1108512472
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108512468}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1122971305
 GameObject:
   m_ObjectHideFlags: 0
@@ -18083,6 +18324,7 @@ GameObject:
   - component: {fileID: 1122971306}
   - component: {fileID: 1122971308}
   - component: {fileID: 1122971307}
+  - component: {fileID: 1122971309}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -18098,7 +18340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122971305}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.1, y: -5.95, z: 1.42}
+  m_LocalPosition: {x: 12.1, y: -2.0499997, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 173102065}
@@ -18139,8 +18381,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -18161,7 +18403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -18761,6 +19002,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &1122971309
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122971305}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1157984932
 GameObject:
   m_ObjectHideFlags: 0
@@ -18773,7 +19026,7 @@ GameObject:
   - component: {fileID: 1157984935}
   - component: {fileID: 1157984934}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree A Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18827,8 +19080,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -887166939
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -46
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -18849,7 +19102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -19512,6 +19764,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &1266665538
 GameObject:
   m_ObjectHideFlags: 0
@@ -19524,7 +19777,7 @@ GameObject:
   - component: {fileID: 1266665541}
   - component: {fileID: 1266665540}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19578,8 +19831,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -19600,7 +19853,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -20263,6 +20515,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &1292257332
 GameObject:
   m_ObjectHideFlags: 0
@@ -20275,7 +20528,7 @@ GameObject:
   - component: {fileID: 1292257335}
   - component: {fileID: 1292257334}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20329,8 +20582,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -20351,7 +20604,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -21014,6 +21266,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &1334050442
 GameObject:
   m_ObjectHideFlags: 0
@@ -21026,7 +21279,7 @@ GameObject:
   - component: {fileID: 1334050445}
   - component: {fileID: 1334050444}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21080,8 +21333,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -21102,7 +21355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -21765,6 +22017,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &1339511684
 GameObject:
   m_ObjectHideFlags: 0
@@ -21777,7 +22030,7 @@ GameObject:
   - component: {fileID: 1339511687}
   - component: {fileID: 1339511686}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21831,8 +22084,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -21853,7 +22106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -22516,6 +22768,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &1359782554
 GameObject:
   m_ObjectHideFlags: 0
@@ -22527,6 +22780,7 @@ GameObject:
   - component: {fileID: 1359782555}
   - component: {fileID: 1359782557}
   - component: {fileID: 1359782556}
+  - component: {fileID: 1359782558}
   m_Layer: 0
   m_Name: Tree A
   m_TagString: Untagged
@@ -22542,7 +22796,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359782554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.97, y: -6.3, z: 0}
+  m_LocalPosition: {x: 6.97, y: -1.9700003, z: 0}
   m_LocalScale: {x: 1.1293057, y: 1.1293057, z: 1.1293057}
   m_Children:
   - {fileID: 1157984933}
@@ -22583,8 +22837,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -887166939
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -22605,7 +22859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -23205,6 +23458,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &1359782558
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359782554}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1501966454
 GameObject:
   m_ObjectHideFlags: 0
@@ -23217,7 +23482,7 @@ GameObject:
   - component: {fileID: 1501966457}
   - component: {fileID: 1501966456}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree A Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23271,8 +23536,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -887166939
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -46
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -23293,7 +23558,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -23956,6 +24220,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &1509054607
 GameObject:
   m_ObjectHideFlags: 0
@@ -23967,6 +24232,7 @@ GameObject:
   - component: {fileID: 1509054608}
   - component: {fileID: 1509054610}
   - component: {fileID: 1509054609}
+  - component: {fileID: 1509054611}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -23982,7 +24248,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509054607}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.76, y: -6.29, z: 1.42}
+  m_LocalPosition: {x: -7.76, y: -2.3899999, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 1668355870}
@@ -24023,8 +24289,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -24045,7 +24311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -24645,6 +24910,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &1509054611
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509054607}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1524777625
 GameObject:
   m_ObjectHideFlags: 0
@@ -24654,6 +24931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1524777626}
+  - component: {fileID: 1524777627}
   m_Layer: 0
   m_Name: Trees C
   m_TagString: Untagged
@@ -24669,7 +24947,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1524777625}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.51, y: 5.21, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 263283932}
@@ -24689,6 +24967,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &1524777627
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524777625}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1549235773
 GameObject:
   m_ObjectHideFlags: 0
@@ -24700,6 +24989,7 @@ GameObject:
   - component: {fileID: 1549235776}
   - component: {fileID: 1549235775}
   - component: {fileID: 1549235774}
+  - component: {fileID: 1549235777}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -24741,8 +25031,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -24763,7 +25053,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -25363,6 +25652,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!4 &1549235776
 Transform:
   m_ObjectHideFlags: 0
@@ -25371,13 +25661,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549235773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.79, y: -4.99, z: 1.42}
+  m_LocalPosition: {x: -12.79, y: -1.0899997, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 1292257333}
   m_Father: {fileID: 1524777626}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &1549235777
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549235773}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1564830664
 GameObject:
   m_ObjectHideFlags: 0
@@ -25389,6 +25690,7 @@ GameObject:
   - component: {fileID: 1564830665}
   - component: {fileID: 1564830667}
   - component: {fileID: 1564830666}
+  - component: {fileID: 1564830668}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -25404,7 +25706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564830664}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.21, y: -4.62, z: 1.42}
+  m_LocalPosition: {x: 14.21, y: -0.7199998, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 1266665539}
@@ -25445,8 +25747,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -25467,7 +25769,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -26067,6 +26368,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &1564830668
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564830664}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1611974223
 GameObject:
   m_ObjectHideFlags: 0
@@ -26079,7 +26392,7 @@ GameObject:
   - component: {fileID: 1611974226}
   - component: {fileID: 1611974225}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26133,8 +26446,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -26155,7 +26468,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -26818,6 +27130,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &1668355869
 GameObject:
   m_ObjectHideFlags: 0
@@ -26830,7 +27143,7 @@ GameObject:
   - component: {fileID: 1668355872}
   - component: {fileID: 1668355871}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26884,8 +27197,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -26906,7 +27219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -27569,6 +27881,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &1715408666
 GameObject:
   m_ObjectHideFlags: 0
@@ -27580,6 +27893,7 @@ GameObject:
   - component: {fileID: 1715408667}
   - component: {fileID: 1715408669}
   - component: {fileID: 1715408668}
+  - component: {fileID: 1715408670}
   m_Layer: 0
   m_Name: Tree B
   m_TagString: Untagged
@@ -27595,7 +27909,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715408666}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.93, y: -6.48, z: 0}
+  m_LocalPosition: {x: 8.93, y: -2.5000002, z: 0}
   m_LocalScale: {x: 0.67636573, y: 0.67636573, z: 0.67636573}
   m_Children:
   - {fileID: 255668689}
@@ -27636,8 +27950,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1239860327
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -27658,7 +27972,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -28024,6 +28337,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &1715408670
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715408666}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1765691960
 GameObject:
   m_ObjectHideFlags: 0
@@ -28035,6 +28360,7 @@ GameObject:
   - component: {fileID: 1765691961}
   - component: {fileID: 1765691963}
   - component: {fileID: 1765691962}
+  - component: {fileID: 1765691964}
   m_Layer: 0
   m_Name: Tree B
   m_TagString: Untagged
@@ -28050,7 +28376,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765691960}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.72, y: -5.54, z: 0}
+  m_LocalPosition: {x: 0.72, y: -1.5600002, z: 0}
   m_LocalScale: {x: 0.9053248, y: 0.9053248, z: 0.9053248}
   m_Children:
   - {fileID: 316794813}
@@ -28091,8 +28417,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1239860327
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -28113,7 +28439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -28479,6 +28804,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &1765691964
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765691960}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1817488799
 GameObject:
   m_ObjectHideFlags: 0
@@ -28532,7 +28869,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -28573,6 +28910,7 @@ GameObject:
   - component: {fileID: 1885952535}
   - component: {fileID: 1885952537}
   - component: {fileID: 1885952536}
+  - component: {fileID: 1885952538}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -28588,7 +28926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885952534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.18, y: -5.9, z: 1.42}
+  m_LocalPosition: {x: -2.18, y: -2, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 1334050443}
@@ -28629,8 +28967,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -28651,7 +28989,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -29251,6 +29588,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &1885952538
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1885952534}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1943032837
 GameObject:
   m_ObjectHideFlags: 0
@@ -29263,7 +29612,7 @@ GameObject:
   - component: {fileID: 1943032840}
   - component: {fileID: 1943032839}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29317,8 +29666,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -29339,7 +29688,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -30002,6 +30350,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &2011677550
 GameObject:
   m_ObjectHideFlags: 0
@@ -30014,7 +30363,7 @@ GameObject:
   - component: {fileID: 2011677553}
   - component: {fileID: 2011677552}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree C Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30068,8 +30417,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -152
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -30090,7 +30439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -30753,6 +31101,7 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
 --- !u!1 &2056216026
 GameObject:
   m_ObjectHideFlags: 0
@@ -30762,6 +31111,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2056216027}
+  - component: {fileID: 2056216028}
   m_Layer: 0
   m_Name: Trees B
   m_TagString: Untagged
@@ -30777,7 +31127,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2056216026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.51, y: 5.21, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 917189146}
@@ -30789,6 +31139,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &2056216028
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056216026}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
 --- !u!1 &2141145264
 GameObject:
   m_ObjectHideFlags: 0
@@ -30800,6 +31161,7 @@ GameObject:
   - component: {fileID: 2141145265}
   - component: {fileID: 2141145267}
   - component: {fileID: 2141145266}
+  - component: {fileID: 2141145268}
   m_Layer: 0
   m_Name: Tree C
   m_TagString: Untagged
@@ -30815,7 +31177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141145264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.76, y: -5.9, z: 1.42}
+  m_LocalPosition: {x: 1.76, y: -2, z: 1.42}
   m_LocalScale: {x: 0.51976, y: 0.51976, z: 0.51976}
   m_Children:
   - {fileID: 1611974224}
@@ -30856,8 +31218,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -291359373
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -30878,7 +31240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -31478,6 +31839,18 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
+--- !u!210 &2141145268
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141145264}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &2146085261
 GameObject:
   m_ObjectHideFlags: 0
@@ -31490,7 +31863,7 @@ GameObject:
   - component: {fileID: 2146085264}
   - component: {fileID: 2146085263}
   m_Layer: 0
-  m_Name: Tree01Bush
+  m_Name: Tree A Canopy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31544,8 +31917,8 @@ SpriteShapeRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -887166939
-  m_SortingLayer: 3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: -46
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
@@ -31566,7 +31939,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90539df1cd5704abcb25fec9f3f5f84b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LegacyGenerator: 0
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
@@ -32229,3 +32601,4 @@ MonoBehaviour:
   m_ColliderOffset: 0
   m_UpdateCollider: 0
   m_OptimizeCollider: 1
+  m_OptimizeGeometry: 1
