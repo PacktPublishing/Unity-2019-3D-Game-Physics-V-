@@ -61,8 +61,8 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			if (Asteroids > 0)
 			{
 				Asteroids -= 1;
+				_currentAsteroid = Catapult.Instance.AddAsteroid();
 			}
-			_currentAsteroid = Catapult.Instance.AddAsteroid();
 		}
 
 		public void AddObstacle(WorldItem worldItem)
@@ -84,11 +84,13 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 			foreach (WorldItem worldItem in _worldItems)
 			{
-				if (worldItem.IsAlive && worldItem.Health <= 0)
+				if (worldItem.gameObject.tag == UpsetDucksConstants.UpsetDuckTag)
 				{
-					worldItem.IsAlive = false;
-					Debug.Log("Score for " + worldItem.gameObject.name);
-					Score += 1;
+					if (worldItem.IsAlive && worldItem.Health <= 0)
+					{
+						worldItem.IsAlive = false;
+						Score += 1;
+					}
 				}
 			}
 		}

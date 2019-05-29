@@ -1,4 +1,5 @@
-﻿using RMC.UnityGamePhysics.Shared;
+﻿using System;
+using RMC.UnityGamePhysics.Shared;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -43,9 +44,15 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 			if (_isDragging)
 			{
-				Vector3 mousePosition3D = Input.mousePosition;
-				mousePosition3D = Camera.main.ScreenToWorldPoint(mousePosition3D);
-				_targetJoint2D.target = new Vector2(mousePosition3D.x, mousePosition3D.y);
+				Vector3 newPosition = Input.mousePosition;
+				newPosition = Camera.main.ScreenToWorldPoint(newPosition);
+
+				float distance3D = Vector3.Distance(newPosition, _originalPosition);
+				if (distance3D < 10.3f)
+				{
+					_targetJoint2D.target = new Vector2(newPosition.x, newPosition.y);
+				}
+
 				Debug.DrawLine(transform.position, _originalPosition);
 			}
 		}
@@ -56,7 +63,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			{
 				return;
 			}
-
+			_originalPosition = transform.position;
 			_isDragging = true;
 			_targetJoint2D.enabled = true;
 		}
@@ -69,14 +76,17 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			}
 
 			_isDragging = false;
-			_isReleased = true;
 			_targetJoint2D.enabled = false;
 
+			ReleaseMe();
+		}
+
+		private void ReleaseMe()
+		{
+			_isReleased = true;
 			Vector3 trajectory3D = transform.position - _originalPosition;
-			Vector2 trajectory2D = - trajectory3D;
-
+			Vector2 trajectory2D = -trajectory3D;
 			_rigidbody2D.AddForce(trajectory2D * _flightSpeed, ForceMode2D.Force);
-
 			SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.ShootAsteroidSound);
 		}
 	}

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8712666910135895318}
   m_Layer: 0
   m_Name: UpsetDuck
-  m_TagString: Untagged
+  m_TagString: UpsetDuck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

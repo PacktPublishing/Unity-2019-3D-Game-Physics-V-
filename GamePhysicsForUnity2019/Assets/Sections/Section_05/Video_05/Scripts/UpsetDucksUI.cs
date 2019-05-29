@@ -30,12 +30,12 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 		public void ShowAsteroids(int value)
 		{
-			_asteroidsText.text = string.Format("Asteroids: {0:000}", value);
+			_asteroidsText.text = string.Format("Asteroids: {0:00}", value);
 		}
 
 		public void ShowScore(int value)
 		{
-			_scoreText.text = string.Format("Score: {0:000}", value);
+			_scoreText.text = string.Format("Score: {0:00}", value);
 		}
 	}
 }
