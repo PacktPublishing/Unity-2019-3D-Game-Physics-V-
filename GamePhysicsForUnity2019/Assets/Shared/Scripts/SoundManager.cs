@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace RMC.UnityGamePhysics.Shared
@@ -27,6 +28,11 @@ namespace RMC.UnityGamePhysics.Shared
 			_instance = this;
 		}
 
+		internal void PlayAudioClip(object coinSound)
+		{
+			throw new NotImplementedException();
+		}
+
 		/// <summary>
 		/// Play the AudioClip by index.
 		/// </summary>
@@ -47,6 +53,7 @@ namespace RMC.UnityGamePhysics.Shared
 				{
 					audioSource.clip = audioClip;
 					audioSource.Play();
+					return;
 				}
 			}
 		}
