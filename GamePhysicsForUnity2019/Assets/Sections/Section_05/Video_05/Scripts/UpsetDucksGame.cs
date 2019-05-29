@@ -41,7 +41,8 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 		private int _asteroids = 0;
 		private int _score = 0;
-
+		private bool _isGameOver = false;
+		private int _upsetDuckCount = 0;
 		private Asteroid _currentAsteroid = null;
 
 		protected void Awake()
@@ -51,6 +52,15 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 		protected void Start()
 		{
+			// TODO: Hardcode this to 3 for simplicity?
+			foreach (WorldItem worldItem in _worldItems)
+			{
+				if (worldItem.gameObject.tag == UpsetDucksConstants.UpsetDuckTag)
+				{
+					_upsetDuckCount++;
+				}
+			}
+
 			Score = 0;
 			Asteroids = 3;
 			AddAsteroid();
@@ -63,6 +73,11 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 				Asteroids -= 1;
 				_currentAsteroid = Catapult.Instance.AddAsteroid();
 			}
+			else
+			{
+				UpsetDucksUI.Instance.ShowResult(false);
+				_isGameOver = true;
+			}
 		}
 
 		public void AddObstacle(WorldItem worldItem)
@@ -72,6 +87,11 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 		protected void Update()
 		{
+			if (_isGameOver)
+			{
+				return;
+			}
+
 			if (_currentAsteroid != null)
 			{
 				if (_currentAsteroid.IsReleased && 
@@ -93,6 +113,13 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 					}
 				}
 			}
+
+			if (Score >= _upsetDuckCount)
+			{
+				UpsetDucksUI.Instance.ShowResult(true);
+				_isGameOver = true;
+			}
+			
 		}
 	}
 }

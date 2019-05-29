@@ -1,4 +1,5 @@
 ﻿using System;
+using DG.Tweening;
 using RMC.UnityGamePhysics.Shared;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -14,6 +15,8 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		public Rigidbody2D Rigidbody2D { get { return _rigidbody2D; } }
 
 		public bool IsReleased { get { return _isReleased; } }
+
+		public float MaxDragDistance = 10.3f;
 
 		[SerializeField]
 		private TargetJoint2D _targetJoint2D;
@@ -33,6 +36,8 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		protected void Start()
 		{
 			_originalPosition = transform.position;
+			transform.localScale = new Vector3(0, 0, 0);
+			transform.DOScale(1, 0.5f).SetEase(Ease.InOutElastic);
 		}
 
 		protected void Update()
@@ -48,7 +53,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 				newPosition = Camera.main.ScreenToWorldPoint(newPosition);
 
 				float distance3D = Vector3.Distance(newPosition, _originalPosition);
-				if (distance3D < 10.3f)
+				if (distance3D < MaxDragDistance)
 				{
 					_targetJoint2D.target = new Vector2(newPosition.x, newPosition.y);
 				}

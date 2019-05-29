@@ -18,6 +18,9 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		[SerializeField]
 		private Text _scoreText;
 
+		[SerializeField]
+		private Text _resultText;
+
 		protected void Awake()
 		{
 			_instance = this;
@@ -36,6 +39,19 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		public void ShowScore(int value)
 		{
 			_scoreText.text = string.Format("Score: {0:00}", value);
+		}
+
+		public void ShowResult(bool isWin)
+		{
+			if (isWin)
+			{
+				_resultText.text = string.Format("You Win!");
+			}
+			else
+			{
+				_resultText.text = string.Format("You Lose!");
+			}
+			
 		}
 	}
 }
