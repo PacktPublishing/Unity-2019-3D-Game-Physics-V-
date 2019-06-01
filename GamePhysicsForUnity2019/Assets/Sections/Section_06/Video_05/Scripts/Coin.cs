@@ -18,7 +18,7 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 		public void DestroyMe()	
 		{
 			IsAlive = false;
-			transform.DOScale(.01f, .5f).
+			transform.DOScale(.01f, .25f).
 				SetEase(Ease.InElastic).
 				OnComplete(DoTween_OnComplete);
 		}
