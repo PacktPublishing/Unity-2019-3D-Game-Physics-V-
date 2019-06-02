@@ -701,6 +701,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EthanWithRagdoll
       objectReference: {fileID: 0}
+    - target: {fileID: 4574763750630644049, guid: fcb71b06f4e43ee429911f81ef761d74,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4574763750630606129, guid: fcb71b06f4e43ee429911f81ef761d74,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -714,7 +719,7 @@ PrefabInstance:
     - target: {fileID: 4574763750630606129, guid: fcb71b06f4e43ee429911f81ef761d74,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 4574763750630606129, guid: fcb71b06f4e43ee429911f81ef761d74,
         type: 3}
@@ -755,6 +760,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574763750662646790, guid: fcb71b06f4e43ee429911f81ef761d74,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.00000009816688
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574763751374478123, guid: fcb71b06f4e43ee429911f81ef761d74,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.013081253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574763750438212535, guid: fcb71b06f4e43ee429911f81ef761d74,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.00000011306821
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574763751989253240, guid: fcb71b06f4e43ee429911f81ef761d74,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.028268563
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574763751989253240, guid: fcb71b06f4e43ee429911f81ef761d74,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.0000005077708
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574763750577497205, guid: fcb71b06f4e43ee429911f81ef761d74,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.14088726
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcb71b06f4e43ee429911f81ef761d74, type: 3}

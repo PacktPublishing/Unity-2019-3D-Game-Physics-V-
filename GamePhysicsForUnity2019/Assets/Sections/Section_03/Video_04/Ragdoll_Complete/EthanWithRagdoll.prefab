@@ -1354,8 +1354,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4574763750630606177}
   - component: {fileID: 4574763750662646791}
-  - component: {fileID: 4574763750662646790}
   - component: {fileID: 4574763750662646789}
+  - component: {fileID: 4574763750662646790}
   m_Layer: 0
   m_Name: EthanLeftUpLeg
   m_TagString: Untagged
@@ -1394,6 +1394,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &4574763750662646789
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574763750630644097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.105893545
+  m_Height: 0.35297847
+  m_Direction: 0
+  m_Center: {x: -0.17648923, y: 0, z: 0}
 --- !u!144 &4574763750662646790
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -1439,20 +1453,6 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!136 &4574763750662646789
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4574763750630644097}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.105893545
-  m_Height: 0.35297847
-  m_Direction: 0
-  m_Center: {x: -0.17648923, y: 0, z: 0}
 --- !u!1 &4574763750630644099
 GameObject:
   m_ObjectHideFlags: 0
@@ -2360,7 +2360,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.08794516, y: -0.014121922, z: 0.22941932}
+  m_ConnectedAnchor: {x: 0.08794545, y: -0.014121905, z: 0.22941895}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_TwistLimitSpring:
