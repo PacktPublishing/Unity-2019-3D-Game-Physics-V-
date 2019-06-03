@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace RMC.UnityGamePhysics.Shared
@@ -23,8 +24,15 @@ namespace RMC.UnityGamePhysics.Shared
 		[SerializeField]
 		private Vector3 _originOffsetRandom;
 
+		[SerializeField]
+		private bool _willDestroySpawned = true;
+
+		private List<GameObject> _spawnedObjects;
+
 		protected void Start()
 		{
+			_spawnedObjects = new List<GameObject>();
+
 			// Call the Spawn function after a delay of the spawnTime and
 			// then continue to call after the same amount of time
 			InvokeRepeating("Spawn", _spawnTime, _spawnTime);
@@ -43,13 +51,31 @@ namespace RMC.UnityGamePhysics.Shared
 				spawned.transform.SetParent(_parent, true);
 				spawned.transform.position = _origin.position;
 
+				_spawnedObjects.Add(spawned);
+
 				// Randomize starting position
 				float x = Random.Range(-_originOffsetRandom.x, _originOffsetRandom.x);
 				float y = Random.Range(-_originOffsetRandom.y, _originOffsetRandom.y);
 				float z = Random.Range(-_originOffsetRandom.z, _originOffsetRandom.z);
 				spawned.transform.Translate(new Vector3(x, y, z));
 			}
-			
+		}
+
+
+		protected void Update()
+		{
+			if (_willDestroySpawned)
+			{
+				for (int s = _spawnedObjects.Count -1; s >= 0; s--)
+				{
+					// If sufficiently 'low', then delete to improve performance
+					if (_spawnedObjects[s].transform.position.y < -10)
+					{
+						Destroy(_spawnedObjects[s]);
+						_spawnedObjects.RemoveAt(s);
+					}
+				}
+			}
 		}
 	}
 }
