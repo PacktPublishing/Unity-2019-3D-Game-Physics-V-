@@ -27,6 +27,9 @@ namespace RMC.UnityGamePhysics.Shared
 		[SerializeField]
 		private bool _willDestroySpawned = true;
 
+		[SerializeField]
+		private bool _willDestroySleeping = true;
+
 		private List<GameObject> _spawnedObjects;
 
 		protected void Start()
@@ -73,6 +76,23 @@ namespace RMC.UnityGamePhysics.Shared
 					{
 						Destroy(_spawnedObjects[s]);
 						_spawnedObjects.RemoveAt(s);
+					}
+				}
+			}
+
+			if (_willDestroySleeping)
+			{
+				for (int s = _spawnedObjects.Count - 1; s >= 0; s--)
+				{
+					// If sufficiently 'still', then delete to improve performance
+					Rigidbody rigidBody = _spawnedObjects[s].GetComponent<Rigidbody>();
+					if (rigidBody != null)
+					{
+						if (rigidBody.IsSleeping())
+						{
+							Destroy(_spawnedObjects[s]);
+							_spawnedObjects.RemoveAt(s);
+						}
 					}
 				}
 			}
