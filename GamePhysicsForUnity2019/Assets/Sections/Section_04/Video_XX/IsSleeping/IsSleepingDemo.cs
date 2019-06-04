@@ -8,7 +8,7 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 
 		private bool _wasFoundSleeping = false;
 
-		void Update()
+		protected void Update()
 		{
 			if (!_wasFoundSleeping)
 			{
