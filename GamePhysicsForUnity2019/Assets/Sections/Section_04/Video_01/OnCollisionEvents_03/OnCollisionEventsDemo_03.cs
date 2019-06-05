@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RMC.UnityGamePhysics.Shared;
+using System;
 using UnityEngine;
 
 namespace RMC.UnityGamePhysics.Sections.Section04
@@ -51,7 +52,8 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 
 		private bool IsFloor(Collision collision)
 		{
-			return collision.gameObject.layer == LayerMask.NameToLayer("Floor");
+			return collision.gameObject.layer == 
+				LayerMask.NameToLayer(ProjectConstants.FloorLayer);
 		}
 	}
 }

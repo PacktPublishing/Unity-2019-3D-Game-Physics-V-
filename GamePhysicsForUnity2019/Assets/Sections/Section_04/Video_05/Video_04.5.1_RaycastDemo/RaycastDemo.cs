@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using RMC.UnityGamePhysics.Shared;
+using UnityEngine;
 
 namespace RMC.UnityGamePhysics.Sections.Section04
 {
@@ -37,7 +38,8 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 			{
 				//Debug.Log("Colliding with: " + _raycastHit.collider.gameObject.name);
 
-				if (_raycastHit.collider.gameObject.layer == LayerMask.NameToLayer("Floor"))
+				if (_raycastHit.collider.gameObject.layer == 
+					LayerMask.NameToLayer(ProjectConstants.FloorLayer))
 				{
 					Debug.Log("The floor is close below.");
 				}
