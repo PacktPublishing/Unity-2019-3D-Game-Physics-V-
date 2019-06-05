@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,6 +8,9 @@ namespace RMC.UnityGamePhysics.Sections.Section07
 {
 	public class TrajectoryPrediction : MonoBehaviour
 	{
+		[SerializeField]
+		private Rigidbody _rigidBody;
+
 		public Vector3 Force
 		{
 			set
@@ -32,7 +36,9 @@ namespace RMC.UnityGamePhysics.Sections.Section07
 		[SerializeField]
 		private GameObject _markerPrefab;
 
-		private Vector3 _forceForLastPrediction;
+		private Vector3 _forceLastUsed;
+		private int _predictionStepsLastUsed;
+		private int _predictionTotalIterationsLastUsed;
 
 		//private Scene sceneMain;
 		private Scene scenePrediction;
@@ -40,79 +46,84 @@ namespace RMC.UnityGamePhysics.Sections.Section07
 		private PhysicsScene sceneMainPhysics;
 		private List<GameObject> _markerList = new List<GameObject>();
 
-		private void Start()
+		protected void Start()
 		{
-			//Physics.autoSimulation = false;
-			//sceneMain = SceneManager.CreateScene("MainScene");
-			//sceneMainPhysics = sceneMain.GetPhysicsScene();
-
 			CreateSceneParameters sceneParam = new CreateSceneParameters(LocalPhysicsMode.Physics3D);
 			scenePrediction = SceneManager.CreateScene("ScenePredicitonPhysics", sceneParam);
 			scenePredictionPhysics = scenePrediction.GetPhysicsScene();
 
+			RebuildAndDoPrediction_Coroutine();
 		}
 
 		protected void OnValidate()
 		{
-			ShootBall();
+			PredictForce(false);
 		}
 
-		private void FixedUpdate()
+		protected void OnGUI()
 		{
-			return;
-			if (!sceneMainPhysics.IsValid())
-				return;
+			if (GUILayout.Button("Refresh Trajectory"))
+			{
+				PredictForce(true);
+			}
 
-			sceneMainPhysics.Simulate(Time.fixedDeltaTime);
+			if (GUILayout.Button("Use Force"))
+			{
+				UseForce();
+			}
 		}
 
-		private void Update()
+		protected void OnDestroy()
 		{
-				
+			DestroyMarkers();
 		}
 
-		private void ShootBall()
+		private void UseForce()
+		{
+			_rigidBody.AddForce(_force, ForceMode.Impulse);
+			DestroyMarkers();
+		}
+
+		private void PredictForce(bool mustPredict)
 		{
 
 			if (!sceneMainPhysics.IsValid() || !scenePrediction.IsValid() || !scenePredictionPhysics.IsValid())
 			{
 				return;
 			}
-				
 
-			if (_forceForLastPrediction == _force)
+			if (mustPredict || _predictionSteps != _predictionStepsLastUsed || 
+				_predictionTotalIterations != _predictionTotalIterationsLastUsed)
 			{
-				return;
+				StartCoroutine(RebuildAndDoPrediction_Coroutine());
 			}
-
-			_forceForLastPrediction = _force;
-
-			DestroyMarkers();
-
-			//GameObject ball = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-			//SceneManager.MoveGameObjectToScene(ball, SceneManager.GetActiveScene());
-			//ball.AddComponent<Rigidbody>().AddForce(_force, ForceMode.Impulse);
-
-			GameObject predictionBall = Instantiate(_markerPrefab);
-			SceneManager.MoveGameObjectToScene(predictionBall, scenePrediction);
-			predictionBall.AddComponent<Rigidbody>().AddForce(_force, ForceMode.Impulse);
-
-			for (int i = 0; i < _predictionTotalIterations; i++)
+			else
 			{
-				scenePredictionPhysics.Simulate(Time.fixedDeltaTime);
-
-				if (i % _predictionSteps == 0)
+				if (_forceLastUsed == _force)
 				{
-					GameObject pathMarkSphere = Instantiate(_markerPrefab);
-					_markerList.Add(pathMarkSphere);
-
-					pathMarkSphere.transform.position = predictionBall.transform.position;
-					SceneManager.MoveGameObjectToScene(pathMarkSphere, scenePrediction);
+					return;
 				}
 			}
 
-			Destroy(predictionBall);
+			_forceLastUsed = _force;
+			_predictionStepsLastUsed = _predictionSteps;
+			_predictionTotalIterationsLastUsed = _predictionTotalIterations;
 
+			StartCoroutine(UseMarkers_Coroutine());
+
+		}
+
+		private IEnumerator RebuildAndDoPrediction_Coroutine()
+		{
+			yield return new WaitForSeconds(0.25f);
+			RebuildMarkers();
+			DoPrediction();
+		}
+
+		private IEnumerator UseMarkers_Coroutine()
+		{
+			yield return new WaitForSeconds(0.25f);
+			DoPrediction();
 		}
 
 		private void DestroyMarkers()
@@ -121,11 +132,48 @@ namespace RMC.UnityGamePhysics.Sections.Section07
 			{
 				Destroy(_markerList[i]);
 			}
+			_markerList.Clear();
 		}
 
-		protected void OnDestroy()
+
+		private void RebuildMarkers()
 		{
 			DestroyMarkers();
+
+			int totalToCreate = _predictionTotalIterations / _predictionSteps + 1;
+
+			for (int i = 0; i < totalToCreate; i++)
+			{
+				GameObject marker = Instantiate(_markerPrefab);
+				marker.transform.position = transform.position;
+				SceneManager.MoveGameObjectToScene(marker, scenePrediction);
+				marker.name = string.Format("{0} - ({1})", marker.name, i);
+				_markerList.Add(marker);
+			}
+		}
+
+		private void DoPrediction()
+		{
+			GameObject predictionBall = Instantiate(_markerPrefab);
+			SceneManager.MoveGameObjectToScene(predictionBall, scenePrediction);
+
+			Rigidbody rigidbody = predictionBall.AddComponent<Rigidbody>();
+			rigidbody.position = transform.position;
+			rigidbody.AddForce(_force, ForceMode.Impulse);
+
+			int markerIndex = 0;
+			for (int i = 0; i < _predictionTotalIterations; i++)
+			{
+				scenePredictionPhysics.Simulate(Time.fixedDeltaTime);
+
+				if (i % _predictionSteps == 0)
+				{
+					_markerList[markerIndex].transform.position = predictionBall.transform.position;
+					markerIndex++;
+				}
+			}
+
+			Destroy(predictionBall);
 		}
 	}
 }
