@@ -181,6 +181,11 @@ PrefabInstance:
       propertyPath: _force.x
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4182697567200744616, guid: b34e2df5850d73549b5262b333e31d05,
+        type: 3}
+      propertyPath: _rigidbody
+      value: 
+      objectReference: {fileID: 2140941842}
     - target: {fileID: 7707280076629635688, guid: b34e2df5850d73549b5262b333e31d05,
         type: 3}
       propertyPath: m_Name
@@ -260,6 +265,11 @@ PrefabInstance:
       propertyPath: _force.x
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 4182697567200744616, guid: b34e2df5850d73549b5262b333e31d05,
+        type: 3}
+      propertyPath: _rigidbody
+      value: 
+      objectReference: {fileID: 1362448988}
     - target: {fileID: 7707280076629635688, guid: b34e2df5850d73549b5262b333e31d05,
         type: 3}
       propertyPath: m_Name
@@ -735,7 +745,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.26332673, y: -0.41524553, z: 0.12692943, w: 0.8614634}
+  m_LocalRotation: {x: 0.2633267, y: -0.41524553, z: 0.12692949, w: 0.8614634}
   m_LocalPosition: {x: 8.992519, y: 12.788052, z: -5.1516495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -961,7 +971,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055852022}
-  m_LocalRotation: {x: 0.26332673, y: -0.41524553, z: 0.12692943, w: 0.8614634}
+  m_LocalRotation: {x: 0.2633267, y: -0.41524553, z: 0.12692949, w: 0.8614634}
   m_LocalPosition: {x: 48.970005, y: 47.25, z: -36.985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1112,6 +1122,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1362448988 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1208888968911792553, guid: b34e2df5850d73549b5262b333e31d05,
+    type: 3}
+  m_PrefabInstance: {fileID: 474326028}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1454589259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7454509253711437677, guid: b34e2df5850d73549b5262b333e31d05,
@@ -1167,6 +1183,11 @@ PrefabInstance:
       propertyPath: _force.x
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4182697567200744616, guid: b34e2df5850d73549b5262b333e31d05,
+        type: 3}
+      propertyPath: _rigidbody
+      value: 
+      objectReference: {fileID: 2024718057}
     - target: {fileID: 7707280076629635688, guid: b34e2df5850d73549b5262b333e31d05,
         type: 3}
       propertyPath: m_Name
@@ -1265,6 +1286,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1963159394 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1208888968911792553, guid: b34e2df5850d73549b5262b333e31d05,
+    type: 3}
+  m_PrefabInstance: {fileID: 6000629635925801758}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2020154724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,6 +1324,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &2024718057 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1208888968911792553, guid: b34e2df5850d73549b5262b333e31d05,
+    type: 3}
+  m_PrefabInstance: {fileID: 1809427834}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2135371526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,6 +1389,12 @@ MonoBehaviour:
   - target: {fileID: 474326029}
     weight: 1
     radius: 0
+--- !u!54 &2140941842 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1208888968911792553, guid: b34e2df5850d73549b5262b333e31d05,
+    type: 3}
+  m_PrefabInstance: {fileID: 421402242}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3761975151187256435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7454509253711437677, guid: b34e2df5850d73549b5262b333e31d05,
@@ -1384,6 +1423,11 @@ PrefabInstance:
       propertyPath: _subForceKeyCode
       value: 274
       objectReference: {fileID: 0}
+    - target: {fileID: 4182697567200744616, guid: b34e2df5850d73549b5262b333e31d05,
+        type: 3}
+      propertyPath: _rigidbody
+      value: 
+      objectReference: {fileID: 1963159394}
     - target: {fileID: 7707280076629635688, guid: b34e2df5850d73549b5262b333e31d05,
         type: 3}
       propertyPath: m_Name
