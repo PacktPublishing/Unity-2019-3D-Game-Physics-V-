@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
+#pragma warning disable 618
 namespace UnityStandardAssets.Utility
 {
     public class ActivateTrigger : MonoBehaviour

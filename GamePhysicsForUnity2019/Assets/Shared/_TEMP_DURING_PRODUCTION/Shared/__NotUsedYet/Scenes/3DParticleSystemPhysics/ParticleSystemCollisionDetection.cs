@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+#pragma warning disable 108
 namespace RMC.UnityGamePhysics.Shared
 {
 	public class ParticleSystemCollisionDetection : MonoBehaviour

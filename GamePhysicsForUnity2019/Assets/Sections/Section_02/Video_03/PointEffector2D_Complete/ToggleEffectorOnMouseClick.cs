@@ -9,7 +9,7 @@ namespace RMC.UnityGamePhysics.Sections.Section02
 	public class ToggleEffectorOnMouseClick : MonoBehaviour
 	{
 		[SerializeField]
-		private Effector2D _effector2D;
+		private Effector2D _effector2D = null;
 
 		[SerializeField]
 		private bool _isEnabledOnAwake = false;

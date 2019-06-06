@@ -19,15 +19,15 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		public float MaxDragDistance = 10.3f;
 
 		[SerializeField]
-		private TargetJoint2D _targetJoint2D;
+		private TargetJoint2D _targetJoint2D = null;
 
 		[SerializeField]
-		private Rigidbody2D _rigidbody2D;
+		private Rigidbody2D _rigidbody2D = null;
 
 		[SerializeField]
 		private float _flightSpeed = 200;
 
-		private Vector3 _originalPosition;
+		private Vector3 _originalPosition = new Vector3();
 
 		private bool _isDragging = false;
 

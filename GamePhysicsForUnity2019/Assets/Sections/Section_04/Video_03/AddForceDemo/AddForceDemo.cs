@@ -6,7 +6,7 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 	public class AddForceDemo : MonoBehaviour
 	{
 		[SerializeField]
-		private Rigidbody _rigidbody;
+		private Rigidbody _rigidbody = null;
 
 		[SerializeField]
 		private KeyCode _posForceKeyCode = KeyCode.UpArrow;
@@ -15,10 +15,10 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 		private KeyCode _negForceKeyCode = KeyCode.DownArrow;
 
 		[SerializeField]
-		private Vector3 _force;
+		private Vector3 _force = new Vector3();
 
 		[SerializeField]
-		private ForceMode _forceMode;
+		private ForceMode _forceMode = ForceMode.Force;
 
 		protected void FixedUpdate()
 		{

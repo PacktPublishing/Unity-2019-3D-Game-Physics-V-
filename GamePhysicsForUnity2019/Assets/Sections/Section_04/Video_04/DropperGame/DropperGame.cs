@@ -7,18 +7,18 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 	public class DropperGame : MonoBehaviour
 	{
 		[SerializeField]
-		private Text _velocityText;
+		private Text _velocityText = null;
 
 		[SerializeField]
-		private Text _scoreText;
+		private Text _scoreText = null;
 
 		[SerializeField]
-		private GameObject _dropperPrefab;
+		private GameObject _dropperPrefab = null;
 
 		[SerializeField]
-		private Vector3 _dropperPosition;
+		private Vector3 _dropperPosition = new Vector3();
 
-		private Rigidbody _dropperRigidBody;
+		private Rigidbody _dropperRigidBody = null;
 
 		private bool _isDragging = false;
 

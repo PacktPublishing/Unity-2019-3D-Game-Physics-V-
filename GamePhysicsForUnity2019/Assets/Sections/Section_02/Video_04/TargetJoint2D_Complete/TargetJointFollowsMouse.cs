@@ -8,7 +8,7 @@ namespace RMC.UnityGamePhysics.Sections.Section02
 	public class TargetJointFollowsMouse : MonoBehaviour
 	{
 		[SerializeField]
-		private TargetJoint2D _targetJoint2D;
+		private TargetJoint2D _targetJoint2D = null;
 
 		protected void Update()
 		{

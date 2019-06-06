@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+#pragma warning disable 649
 namespace RMC.UnityGamePhysics.Shared
 {
 	public class Spawner : MonoBehaviour

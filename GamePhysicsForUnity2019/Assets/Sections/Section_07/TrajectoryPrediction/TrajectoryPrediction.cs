@@ -9,7 +9,7 @@ namespace RMC.UnityGamePhysics.Sections.Section07
 	public class TrajectoryPrediction : MonoBehaviour
 	{
 		[SerializeField]
-		private Rigidbody _rigidBody;
+		private Rigidbody _rigidBody = null;
 
 		public Vector3 Force
 		{
@@ -34,7 +34,7 @@ namespace RMC.UnityGamePhysics.Sections.Section07
 		private int _predictionTotalIterations = 500;
 
 		[SerializeField]
-		private GameObject _markerPrefab;
+		private GameObject _markerPrefab = null;
 
 		private Vector3 _forceLastUsed;
 		private int _predictionStepsLastUsed;

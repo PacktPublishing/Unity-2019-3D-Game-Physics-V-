@@ -3,8 +3,8 @@ using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
-
-namespace UnityStandardAssets.Utility
+#pragma warning disable 649
+namespace UnityStandardAssets.Utility 
 {
 #if UNITY_EDITOR
 

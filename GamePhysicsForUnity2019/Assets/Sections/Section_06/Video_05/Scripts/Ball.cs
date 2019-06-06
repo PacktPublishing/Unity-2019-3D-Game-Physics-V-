@@ -9,7 +9,7 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 		private float _speed = 50;
 
 		[SerializeField]
-		private Rigidbody _rigidbody;
+		private Rigidbody _rigidbody = null;
 
 		//TODO: Why do this in Fixed?
 		public void FixedUpdate()

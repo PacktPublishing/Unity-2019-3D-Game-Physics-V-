@@ -11,10 +11,10 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		public static Catapult Instance { get { return _instance; } }
 
 		[SerializeField]
-		private GameObject _asteroidPrefab;
+		private GameObject _asteroidPrefab = null;
 
 		[SerializeField]
-		private GameObject _centerPoint;
+		private GameObject _centerPoint = null;
 
 		protected void Awake()
 		{

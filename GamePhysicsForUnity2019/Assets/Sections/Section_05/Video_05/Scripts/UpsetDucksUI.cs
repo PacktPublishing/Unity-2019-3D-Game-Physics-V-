@@ -13,13 +13,13 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		public static UpsetDucksUI Instance { get { return _instance; } }
 
 		[SerializeField]
-		private Text _asteroidsText;
+		private Text _asteroidsText = null;
 
 		[SerializeField]
-		private Text _scoreText;
+		private Text _scoreText = null;
 
 		[SerializeField]
-		private Text _resultText;
+		private Text _resultText = null;
 
 		protected void Awake()
 		{

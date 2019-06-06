@@ -7,19 +7,19 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 	public class UpsetDuck : MonoBehaviour
 	{
 		[SerializeField]
-		private WorldItem _worldItem;
+		private WorldItem _worldItem = null;
 
 		[SerializeField]
-		private SpriteRenderer _spriteRenderer;
+		private SpriteRenderer _spriteRenderer = null;
 
 		[SerializeField]
-		private Sprite _idleSprite;
+		private Sprite _idleSprite = null;
 
 		[SerializeField]
-		private Sprite _hitSprite;
+		private Sprite _hitSprite = null;
 
 		[SerializeField]
-		private Sprite _deadSprite;
+		private Sprite _deadSprite = null;
 
 		protected void Start()
 		{

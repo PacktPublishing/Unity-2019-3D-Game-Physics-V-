@@ -13,13 +13,13 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 		public static CrazyBallUI Instance { get { return _instance; } }
 
 		[SerializeField]
-		private Text _timeText;
+		private Text _timeText = null;
 
 		[SerializeField]
-		private Text _scoreText;
+		private Text _scoreText = null;
 
 		[SerializeField]
-		private Text _resultText;
+		private Text _resultText = null;
 
 		protected void Awake()
 		{

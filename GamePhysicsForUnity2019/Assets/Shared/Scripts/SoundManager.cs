@@ -18,10 +18,10 @@ namespace RMC.UnityGamePhysics.Shared
 		public static SoundManager Instance { get { return _instance; } }
 
 		[SerializeField]
-		private List<AudioClip> _audioClips;
+		private List<AudioClip> _audioClips = new List<AudioClip>();
 
 		[SerializeField]
-		private List<AudioSource> _audioSources;
+		private List<AudioSource> _audioSources = new List<AudioSource>();
 
 		protected void Awake()
 		{
