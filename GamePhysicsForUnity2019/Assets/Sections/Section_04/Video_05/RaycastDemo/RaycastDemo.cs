@@ -6,9 +6,14 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 	[ExecuteInEditMode]
 	public class RaycastDemo : MonoBehaviour
 	{
-		public bool IsDebug = true;
-		public float RayDistance = 10;
-		public float RayDebugDuration = 0.1f;
+		[SerializeField]
+		private bool _isDebug = true;
+
+		[SerializeField]
+		private float _rayDistance = 3;
+
+		[SerializeField]
+		private float _rayDuration = 0.1f;
 
 		private Ray _ray;
 		private Vector3 _rayPosition;
@@ -27,12 +32,15 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 			_ray.origin = transform.position;
 			_ray.direction = Vector3.down;
 
-			if (IsDebug == true)
+			if (_isDebug == true)
 			{
-				Debug.DrawRay(_ray.origin, _ray.direction * RayDistance, Color.red, RayDebugDuration);
+				Debug.DrawRay(_ray.origin, _ray.direction * _rayDistance, Color.red, _rayDuration);
 			}
 
-			Physics.Raycast(_ray, out _raycastHit, RayDistance);
+			// ************************
+			// PHYSICS - Here is the Raycast functionality
+			// ************************
+			Physics.Raycast(_ray, out _raycastHit, _rayDistance);
 
 			if (_raycastHit.collider != null)
 			{

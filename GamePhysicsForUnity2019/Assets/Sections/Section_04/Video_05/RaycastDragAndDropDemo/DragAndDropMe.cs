@@ -4,7 +4,8 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 {
 	public class DragAndDropMe : MonoBehaviour
 	{
-		public bool IsDebug = true;
+		[SerializeField]
+		private bool _isDebug = true;
 
 		private float _rayDistance = 10;
 		private bool _isDragging;
@@ -28,7 +29,10 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 				{
 					_isDragging = true;
 					_targetScreenSpacePosition = Camera.main.WorldToScreenPoint(_target.transform.position);
-					_targetDragOffset = _target.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, _targetScreenSpacePosition.z));
+
+					_targetDragOffset = _target.transform.position - 
+						Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, _targetScreenSpacePosition.z));
+
 					ResetVelocity(true);
 				}
 			}
@@ -65,14 +69,18 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 
 		GameObject GameObjectUnderMouse(out RaycastHit hit)
 		{
-			GameObject target = null;
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+			// ************************
+			// PHYSICS - Here is the Raycast functionality
+			// ************************
+			GameObject target = null;
 			if (Physics.Raycast(ray.origin, ray.direction * _rayDistance, out hit))
 			{
 				target = hit.collider.gameObject;
 			}
 
-			if (IsDebug == true)
+			if (_isDebug == true)
 			{
 				Debug.DrawRay(ray.origin, ray.direction * _rayDistance, Color.red, 0.1f);
 			}
