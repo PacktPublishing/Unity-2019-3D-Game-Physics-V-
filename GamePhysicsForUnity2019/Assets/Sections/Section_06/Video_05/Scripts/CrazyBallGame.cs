@@ -41,7 +41,6 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 		private float _timeLeft = 0;
 		private int _score = 0;
 		private bool _isGameOver = false;
-		private int _upsetDuckCount = 0;
 
 		protected void Awake()
 		{
