@@ -1,6 +1,7 @@
 ﻿
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 #pragma warning disable 649
 namespace RMC.UnityGamePhysics.Shared
@@ -8,14 +9,20 @@ namespace RMC.UnityGamePhysics.Shared
 	public class Spawner : MonoBehaviour
 	{
 		[SerializeField]
-		private int _spawnAmount = 1;		// How amount per spawn
+		private bool _willSpawnImmediately = true;
 
+		// How amount per spawn?
 		[SerializeField]
-		private float _spawnTime = 3f;		// How long between each spawn
+		private int _spawnAmount = 1;
 
+		// How long between each spawn, seconds?
 		[SerializeField]
-		private GameObject _prefab;			// The enemy prefab to be spawned
+		private float _spawnDelay = 3f;
 
+		// The enemy prefab to be spawned?
+		[SerializeField]
+		private GameObject _prefab;
+		
 		[SerializeField]
 		private Transform _parent;
 
@@ -23,7 +30,16 @@ namespace RMC.UnityGamePhysics.Shared
 		private Transform _origin;
 
 		[SerializeField]
-		private Vector3 _originOffsetRandom;
+		private bool _useOriginOffsetRandom = true;
+
+		[SerializeField]
+		private Vector3 _originOffsetRandom = new Vector3();
+
+		[SerializeField]
+		private bool _useOriginOffsetSystematic = false;
+
+		[SerializeField]
+		private Vector3 _originOffsetSystematic = new Vector3();
 
 		[SerializeField]
 		private bool _willDestroySpawned = true;
@@ -33,16 +49,25 @@ namespace RMC.UnityGamePhysics.Shared
 
 		private List<GameObject> _spawnedObjects;
 
+		[SerializeField]
+		private UnityEvent OnSpawned = new UnityEvent();
+
 		protected void Start()
 		{
 			_spawnedObjects = new List<GameObject>();
 
-			// Call the Spawn function after a delay of the spawnTime and
-			// then continue to call after the same amount of time
-			InvokeRepeating("Spawn", _spawnTime, _spawnTime);
+			// Call repeated every X seconds (if non-zero)
+			if (_spawnDelay > 0)
+			{
+				InvokeRepeating("Spawn", _spawnDelay, _spawnDelay);
+			}
+			
 
 			// Also spawn one immediatly
-			Spawn();
+			if (_willSpawnImmediately)
+			{
+				Spawn();
+			}
 		}
 
 		private void Spawn()
@@ -57,12 +82,29 @@ namespace RMC.UnityGamePhysics.Shared
 
 				_spawnedObjects.Add(spawned);
 
-				// Randomize starting position
-				float x = Random.Range(-_originOffsetRandom.x, _originOffsetRandom.x);
-				float y = Random.Range(-_originOffsetRandom.y, _originOffsetRandom.y);
-				float z = Random.Range(-_originOffsetRandom.z, _originOffsetRandom.z);
-				spawned.transform.Translate(new Vector3(x, y, z));
+				// Systematically change starting position
+				if (_useOriginOffsetSystematic)
+				{
+					float x = _originOffsetSystematic.x * i;
+					float y = _originOffsetSystematic.y * i;
+					float z = _originOffsetSystematic.z * i;
+					spawned.transform.Translate(new Vector3(x, y, z));
+				}
+
+				// Randomly change starting position
+				if (_useOriginOffsetRandom)
+				{
+					float x = Random.Range(-_originOffsetRandom.x, _originOffsetRandom.x);
+					float y = Random.Range(-_originOffsetRandom.y, _originOffsetRandom.y);
+					float z = Random.Range(-_originOffsetRandom.z, _originOffsetRandom.z);
+					spawned.transform.Translate(new Vector3(x, y, z));
+				}
 			}
+
+			OnSpawned.Invoke();
+
+
+			
 		}
 
 
