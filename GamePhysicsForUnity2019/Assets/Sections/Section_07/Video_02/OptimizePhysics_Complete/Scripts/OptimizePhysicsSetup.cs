@@ -25,13 +25,14 @@ namespace RMC.UnityGamePhysics.Sections.Section07
 			// Build your project
 			// While the editor runs efficiently, you get better performance 
 
-			// 4
+			// 4a
 			// Default 0.02f
 			// Higher number is more efficient FPS yet less accurate physics
 			// Ex. 1.0f is high framerate but poor physics accuracy
 			// Ex. 0.08f is a good compromise
-			// Ex. 0.02f is low framerae but high physics accuracy
+			// Ex. 0.02f is low framerate but high physics accuracy
 			Time.fixedDeltaTime = .08f;
+			Time.maximumDeltaTime = 1;
 
 			// 5
 			// Go to the one light in the scene and turn off shadows FPS
@@ -39,7 +40,9 @@ namespace RMC.UnityGamePhysics.Sections.Section07
 			// 6
 			// Default 0.005
 			// Higher value, earlier sleep.
-			Physics.sleepThreshold = .01f;
+			Physics.sleepThreshold = 5;
+			Physics.defaultContactOffset = 0.05f;
+			Physics.defaultSolverIterations = 1;
 
 			// 7
 			// Go to the floor in scene and set static. I see improved FPS
