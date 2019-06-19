@@ -51,7 +51,7 @@ namespace RMC.UnityGamePhysics.Shared
 			FolderUtilities.CloseAllAndOpenOne(path);
 		}
 
-		[MenuItem("PacktPub/GamePhysicsForUnity2019/Reimport All Scripts")]
+		//[MenuItem("PacktPub/GamePhysicsForUnity2019/Reimport All Scripts")]
 		public static void ForceRebuild()
 		{
 			string[] rebuildSymbols = { "RebuildToggle1", "RebuildToggle2" };
