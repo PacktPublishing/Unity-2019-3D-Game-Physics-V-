@@ -53,6 +53,8 @@ namespace RMC.UnityGamePhysics.Sections.Section07
 			scenePredictionPhysics = scenePrediction.GetPhysicsScene();
 
 			RebuildAndDoPrediction_Coroutine();
+
+			PredictForce(true);
 		}
 
 		protected void OnValidate()

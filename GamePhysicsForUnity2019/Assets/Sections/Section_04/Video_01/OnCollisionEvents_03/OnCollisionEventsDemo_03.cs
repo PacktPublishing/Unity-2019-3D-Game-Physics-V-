@@ -41,7 +41,7 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 		{
 			if (collision.contacts.Length == 0)
 			{
-				Debug.Log("--No Contacts--" + color);
+				Debug.Log("--No Contacts--");
 			}
 
 			foreach (ContactPoint contact in collision.contacts)

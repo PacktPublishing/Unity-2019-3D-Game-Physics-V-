@@ -9,7 +9,7 @@ namespace RMC.UnityGamePhysics.Sections.Section07
 	public class ActivateRigidBodyChildren: MonoBehaviour
 	{
 		[SerializeField]
-		private Transform _parent;
+		private Transform _parent = null;
 
 		[SerializeField]
 		private bool _isActivatedOnStart = false;
