@@ -9,18 +9,16 @@ namespace RMC.UnityGamePhysics.Shared
 		}
 		protected void Start()
 		{
-			//Debug.Log("Start");
 		}
 		protected void FixedUpdate()
 		{
 		}
 		protected void OnTriggerEnter(Collider collider)
 		{
-			Debug.Log("OnTriggerEnter: " + collider.gameObject.name);
 		}
 		protected void OnCollisionEnter(Collision collision)
 		{
-			//Debug.Log("OnCollisionEnter: " + collision.gameObject.name);
+			Debug.Log("OnCollisionEnter: " + gameObject.name + " hit by " + collision.gameObject.name);
 		}
 		protected void Update()
 		{
