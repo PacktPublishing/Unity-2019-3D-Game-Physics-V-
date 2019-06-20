@@ -1,7 +1,6 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-
 namespace RMC.UnityGamePhysics.Shared
 {
 	public class FolderUtilities
