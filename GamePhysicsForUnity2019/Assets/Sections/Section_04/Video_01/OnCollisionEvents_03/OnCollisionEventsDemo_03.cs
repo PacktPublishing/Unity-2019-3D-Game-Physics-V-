@@ -29,12 +29,8 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 
 		protected void OnCollisionExit(Collision collision)
 		{
-			if (IsFloor(collision))
-			{
-				return;
-			}
-
-			DrawContacts(collision, Color.green);
+			// OnCollisionExit there are no contacts, 
+			// So we do not call DrawContacts
 		}
 
 		private void DrawContacts(Collision collision, Color color)
