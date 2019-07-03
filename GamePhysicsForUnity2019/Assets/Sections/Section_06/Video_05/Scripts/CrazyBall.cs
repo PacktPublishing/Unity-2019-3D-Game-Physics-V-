@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 {
-	public class Ball : MonoBehaviour
+	public class CrazyBall : MonoBehaviour
 	{
 		[SerializeField]
 		private float _speed = 50;
