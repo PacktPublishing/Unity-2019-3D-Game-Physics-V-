@@ -829,7 +829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c503de21125bd8c41bcb1e59f207ef2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1191054677816456, guid: 72ed9871ccf992c4fbcb7250c50b8805, type: 3}
+  prefab: {fileID: 6587868926335295227, guid: be68e478c9a2e10409ce097d2ec1c643, type: 3}
   range:
     x: 50
     y: 100
