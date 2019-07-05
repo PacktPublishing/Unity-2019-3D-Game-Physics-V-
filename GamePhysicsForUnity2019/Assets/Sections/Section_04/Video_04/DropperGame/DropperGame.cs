@@ -13,6 +13,9 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 		private Text _scoreText = null;
 
 		[SerializeField]
+		private GameObject _dropperParent = null;
+
+		[SerializeField]
 		private GameObject _dropperPrefab = null;
 
 		[SerializeField]
@@ -34,6 +37,8 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 		private void AddDropper()
 		{
 			GameObject dropper = Instantiate(_dropperPrefab);
+			dropper.transform.SetParent(_dropperParent.transform);
+
 			_dropperRigidBody = dropper.GetComponent<Rigidbody>();
 
 			if (_dropperRigidBody != null)
