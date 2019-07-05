@@ -1,0 +1,26 @@
+{
+    "name": "Unity.Physics.Samples.Test",
+    "references": [
+        "Unity.Entities",
+        "Unity.Entities.Hybrid",
+        "Unity.Entities.Tests",
+        "Unity.Physics"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.havok.physics",
+            "expression": "0.0.0",
+            "define": "HAVOK_PHYSICS_EXISTS"
+        }
+    ]
+}
