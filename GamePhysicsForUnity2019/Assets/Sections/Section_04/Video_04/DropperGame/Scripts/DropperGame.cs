@@ -43,7 +43,7 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 
 			if (_dropperRigidBody != null)
 			{
-				// Access Physics Properties
+				// 1. Access Physics Properties
 				_dropperRigidBody.useGravity = false;
 				_dropperRigidBody.isKinematic = true;
 				_dropperRigidBody.position = _dropperPosition;
@@ -91,14 +91,14 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 				{
 					_isDragging = false;
 
-					// Access Physics Properties
+					// 2. Access Physics Properties
 					_dropperRigidBody.useGravity = true;
 					_dropperRigidBody.isKinematic = false;
 				}
 			}
 			else
 			{
-				// Access Physics Properties
+				// 3. Access Physics Properties
 				if (_dropperRigidBody.IsSleeping())
 				{
 					Dropper dropper = _dropperRigidBody.gameObject.GetComponent<Dropper>();
@@ -116,7 +116,7 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 				}
 				else
 				{
-					// Access Physics Properties
+					// 4. Access Physics Properties
 					_maxVelocity = Math.Max(_maxVelocity,
 						_dropperRigidBody.velocity.magnitude);
 
