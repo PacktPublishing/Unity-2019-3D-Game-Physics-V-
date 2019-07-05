@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace RMC.UnityGamePhysics.Sections.Section04
 {
-	[ExecuteInEditMode]
 	public class RaycastDemo : MonoBehaviour
 	{
 		[SerializeField]
@@ -19,15 +18,13 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 		private Vector3 _rayPosition;
 		private RaycastHit _raycastHit;
 
-		void Start()
+		protected void Start()
 		{
 			_ray = new Ray();
 			_ray.direction = Vector3.down;
 		}
 
-		// Update is called once per frame 
-		// (Including in EditMode to help us debug.)
-		void Update()
+		protected void Update()
 		{
 			_ray.origin = transform.position;
 			_ray.direction = Vector3.down;
@@ -51,8 +48,13 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 				{
 					Debug.Log("The floor is close below.");
 				}
-			}
 
+				if (_raycastHit.collider.gameObject.layer ==
+					LayerMask.NameToLayer(ProjectConstants.RampLayer))
+				{
+					Debug.Log("The ramp is close below.");
+				}
+			}
 		}
 	}
 }

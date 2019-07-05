@@ -132,6 +132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ramp
       objectReference: {fileID: 0}
+    - target: {fileID: 7562553814636417336, guid: 27830c51030490849acef837947ed126,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 6820929753105244971, guid: 27830c51030490849acef837947ed126,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -557,6 +562,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435169768215693288, guid: a9582f5195214df4aa1de4162a06df32,
+        type: 3}
+      propertyPath: _rayDuration
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435169768215693288, guid: a9582f5195214df4aa1de4162a06df32,
+        type: 3}
+      propertyPath: _isDebug
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9582f5195214df4aa1de4162a06df32, type: 3}

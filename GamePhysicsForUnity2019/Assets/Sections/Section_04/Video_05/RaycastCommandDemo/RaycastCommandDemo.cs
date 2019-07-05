@@ -53,6 +53,12 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 					{
 						Debug.Log("The floor is close below.");
 					}
+
+					if (raycastHit.collider.gameObject.layer ==
+						LayerMask.NameToLayer(ProjectConstants.RampLayer))
+					{
+						Debug.Log("The ramp is close below.");
+					}
 				}
 			}
 
