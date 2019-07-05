@@ -16,11 +16,6 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 		[SerializeField]
 		private float _duration = 1f;
 
-		protected void Start()
-		{
-
-		}
-
 		protected void OnCollisionEnter(Collision collision)
 		{
 			if (_isDebug)
