@@ -27,6 +27,8 @@ namespace RMC.UnityGamePhysics.Sections.Section04
 			{
 				if (Input.GetKeyDown (_keyCode))
 				{
+					Debug.Log("Draw Me!");
+
 					// Add the current position into a list
 					_debugPositionList.Add(transform.position);
 				}
