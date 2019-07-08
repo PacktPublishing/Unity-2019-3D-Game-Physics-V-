@@ -35,7 +35,7 @@ namespace RMC.UnityGamePhysics.Sections.Section07
 			Time.maximumDeltaTime = 1;
 
 			// 5
-			// Go to the one light in the scene and turn off shadows FPS
+			// Go to the one light in the scene and turn off shadows 
 
 			// 6
 			// Default 0.005
