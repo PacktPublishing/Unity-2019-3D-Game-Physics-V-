@@ -6,6 +6,7 @@
 		public const int WinSound = 1;
 		public const int LoseSound = 2;
 		public const int CollisionSound = 3;
+		public const int ExplosionSound = 4;
 
 		public const string UpsetDuckTag = "UpsetDuck";
 	}

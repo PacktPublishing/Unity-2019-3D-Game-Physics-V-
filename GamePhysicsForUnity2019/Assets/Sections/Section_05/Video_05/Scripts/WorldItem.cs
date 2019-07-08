@@ -1,16 +1,9 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 {
-	public class OnHealthChangeUnityEvent : UnityEvent<float>
-	{
-		internal void AddEventListener(object obstacle_OnHealthChange)
-		{
-			throw new NotImplementedException();
-		}
-	}
+	public class OnHealthChangeUnityEvent : UnityEvent<float> { }
 
 	public class WorldItem : MonoBehaviour
 	{
@@ -18,20 +11,17 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 		public float Health { get { return _health; } }
 
+		[Range (0, 100)]
 		[SerializeField]
 		private float _health = 100;
 
+		[Range(0, 1)]
 		[SerializeField]
 		private float _defense = 1;
 
 		public bool IsAlive = true;
 
 		public OnHealthChangeUnityEvent OnHealthChange = new OnHealthChangeUnityEvent();
-
-		protected void Start()
-		{
-			UpsetDucksGame.Instance.AddObstacle(this);
-		}
 
 		protected void OnCollisionEnter2D(Collision2D collision2D)
 		{

@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using RMC.UnityGamePhysics.Shared;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 {
@@ -20,7 +23,11 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			set
 			{
 				_score = value;
-				UpsetDucksUI.Instance.ShowScore(_score);
+				if (UpsetDucksUI.Instance != null)
+				{
+					UpsetDucksUI.Instance.ShowScore(_score);
+				}
+				
 			}
 		}
 
@@ -33,9 +40,18 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			set
 			{
 				_asteroids = value;
-				UpsetDucksUI.Instance.ShowAsteroids(_asteroids);
+				if (UpsetDucksUI.Instance != null)
+				{
+					UpsetDucksUI.Instance.ShowAsteroids(_asteroids);
+				}
 			}
 		}
+
+		[SerializeField]
+		private GameObject _explosionPrefab = null;
+
+		[SerializeField]
+		private GameObject _worldItemParent = null;
 
 		public List<WorldItem> _worldItems = new List<WorldItem>();
 
@@ -52,37 +68,29 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 		protected void Start()
 		{
-			// TODO: Hardcode this to 3 for simplicity?
+			//Default 0.005 - Change to make turns end more quickly
+			Physics.sleepThreshold = 0.05f;
+
+			// Reset values
+			_upsetDuckCount = 0;
+			_isGameOver = false;
+			_currentAsteroid = null;
+			Score = 0;
+			Asteroids = 3;
+
+			// Create new list of worldItems
+			_worldItems = _worldItemParent.GetComponentsInChildren<WorldItem>().ToList();
 			foreach (WorldItem worldItem in _worldItems)
 			{
 				if (worldItem.gameObject.tag == UpsetDucksConstants.UpsetDuckTag)
 				{
+					// Count how many upsetducks so we know how many we must 'hit'
 					_upsetDuckCount++;
 				}
 			}
 
-			Score = 0;
-			Asteroids = 3;
+			// Start the catapult
 			AddAsteroid();
-		}
-
-		private void AddAsteroid()
-		{
-			if (Asteroids > 0)
-			{
-				Asteroids -= 1;
-				_currentAsteroid = Catapult.Instance.AddAsteroid();
-			}
-			else
-			{
-				UpsetDucksUI.Instance.ShowResult(false);
-				_isGameOver = true;
-			}
-		}
-
-		public void AddObstacle(WorldItem worldItem)
-		{
-			_worldItems.Add(worldItem);
 		}
 
 		protected void Update()
@@ -106,6 +114,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			{
 				if (worldItem.gameObject.tag == UpsetDucksConstants.UpsetDuckTag)
 				{
+					
 					if (worldItem.IsAlive && worldItem.Health <= 0)
 					{
 						worldItem.IsAlive = false;
@@ -116,10 +125,48 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 			if (Score >= _upsetDuckCount)
 			{
-				UpsetDucksUI.Instance.ShowResult(true);
+				if (UpsetDucksUI.Instance != null)
+				{
+					UpsetDucksUI.Instance.ShowResult(true);
+				}
 				_isGameOver = true;
 			}
-			
+		}
+
+		private void AddAsteroid()
+		{
+			if (Asteroids > 0)
+			{
+				Asteroids -= 1;
+				if (Catapult.Instance != null)
+				{
+					_currentAsteroid = Catapult.Instance.AddAsteroid();
+				}
+			}
+			else
+			{
+				UpsetDucksUI.Instance.ShowResult(false);
+				_isGameOver = true;
+			}
+		}
+
+		public void DestroyCrate(Crate crate)
+		{
+			SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.ExplosionSound);
+
+			GameObject explosion = Instantiate(_explosionPrefab);
+			explosion.transform.position = crate.transform.position;
+
+			_worldItems.Remove(crate.gameObject.GetComponent<WorldItem>());
+
+			StartCoroutine(DestroyGameObjectAfterXSeconds(crate.gameObject, 0));
+			StartCoroutine(DestroyGameObjectAfterXSeconds(explosion.gameObject, 0.25f));
+		}
+
+		private IEnumerator DestroyGameObjectAfterXSeconds(GameObject go, float seconds)
+		{
+			yield return new WaitForSeconds(seconds);
+			Destroy(go);
 		}
 	}
 }

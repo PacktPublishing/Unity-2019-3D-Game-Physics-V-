@@ -127,14 +127,14 @@ TargetJoint2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3415429007492231572}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_Anchor: {x: 0, y: 0}
-  m_Target: {x: -6.87, y: -1.11}
+  m_Target: {x: 5.345, y: 2.8065002}
   m_AutoConfigureTarget: 1
   m_MaxForce: 10000
   m_DampingRatio: 1
@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baceb91cf3fed0845be96f36a7f1694d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxDragDistance: 10.3
   _targetJoint2D: {fileID: 3449386111832921950}
   _rigidbody2D: {fileID: 3415429007492231568}
-  _flightSpeed: 300
+  _flightSpeed: 400

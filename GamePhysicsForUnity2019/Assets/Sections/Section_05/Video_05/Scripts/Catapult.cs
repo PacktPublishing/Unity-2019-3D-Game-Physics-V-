@@ -14,6 +14,9 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		private GameObject _asteroidPrefab = null;
 
 		[SerializeField]
+		private GameObject _asteroidParent = null;
+
+		[SerializeField]
 		private GameObject _centerPoint = null;
 
 		protected void Awake()
@@ -24,9 +27,11 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		public Asteroid AddAsteroid()
 		{
 			GameObject asteroidGameObject = Instantiate(_asteroidPrefab);
+			asteroidGameObject.transform.SetParent(_asteroidParent.transform);
 			asteroidGameObject.transform.position = _centerPoint.gameObject.transform.position;
 
 			Asteroid asteroid = asteroidGameObject.GetComponent<Asteroid>();
+			asteroid.TargetJoint2D.enabled = true;
 			return asteroid;
 		}
 	}

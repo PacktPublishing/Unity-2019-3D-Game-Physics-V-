@@ -13,6 +13,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 	public class Asteroid : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 	{
 		public Rigidbody2D Rigidbody2D { get { return _rigidbody2D; } }
+		public TargetJoint2D TargetJoint2D { get { return _targetJoint2D; } }
 
 		public bool IsReleased { get { return _isReleased; } }
 
@@ -26,11 +27,8 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 		[SerializeField]
 		private float _flightSpeed = 200;
-
 		private Vector3 _originalPosition = new Vector3();
-
 		private bool _isDragging = false;
-
 		private bool _isReleased = false;
 
 		protected void Start()
