@@ -90,7 +90,10 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			Vector3 trajectory3D = transform.position - _originalPosition;
 			Vector2 trajectory2D = -trajectory3D;
 			_rigidbody2D.AddForce(trajectory2D * _flightSpeed, ForceMode2D.Force);
+
+
 			SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.ShootAsteroidSound);
+			UpsetDucksGame.Instance.Asteroids--;
 		}
 	}
 }

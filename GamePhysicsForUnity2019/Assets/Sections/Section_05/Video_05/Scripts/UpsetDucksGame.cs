@@ -25,7 +25,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 				_score = value;
 				if (UpsetDucksUI.Instance != null)
 				{
-					UpsetDucksUI.Instance.ShowScore(_score);
+					UpsetDucksUI.Instance.ShowScore(_score, _upsetDuckCount);
 				}
 				
 			}
@@ -69,14 +69,12 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		protected void Start()
 		{
 			//Default 0.005 - Change to make turns end more quickly
-			Physics.sleepThreshold = 0.05f;
+			Physics.sleepThreshold = 0.5f;
 
 			// Reset values
-			_upsetDuckCount = 0;
 			_isGameOver = false;
 			_currentAsteroid = null;
-			Score = 0;
-			Asteroids = 3;
+			_upsetDuckCount = 0;
 
 			// Create new list of worldItems
 			_worldItems = _worldItemParent.GetComponentsInChildren<WorldItem>().ToList();
@@ -88,6 +86,9 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 					_upsetDuckCount++;
 				}
 			}
+
+			Score = 0;
+			Asteroids = 3;
 
 			// Start the catapult
 			AddAsteroid();
@@ -137,7 +138,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		{
 			if (Asteroids > 0)
 			{
-				Asteroids -= 1;
 				if (Catapult.Instance != null)
 				{
 					_currentAsteroid = Catapult.Instance.AddAsteroid();

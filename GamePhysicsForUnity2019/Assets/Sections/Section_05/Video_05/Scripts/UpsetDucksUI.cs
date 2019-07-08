@@ -36,9 +36,9 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			_asteroidsText.text = string.Format("Asteroids: {0:00}", value);
 		}
 
-		public void ShowScore(int value)
+		public void ShowScore(int currentScore, int totalScore)
 		{
-			_scoreText.text = string.Format("Score: {0:00}", value);
+			_scoreText.text = string.Format("Score: {0:00}/{1:00}", currentScore, totalScore);
 		}
 
 		public void ShowResult(bool isWin)

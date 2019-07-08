@@ -1006,7 +1006,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4271822427292615900}
   - component: {fileID: 4271822427292615903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SkyTileSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1961,11 +1961,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OffscreenWall (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 9196910761767443153, guid: e7fd941037bf57443b9614b3ab1986d3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6161442301925328926, guid: e7fd941037bf57443b9614b3ab1986d3,
         type: 3}
