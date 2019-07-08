@@ -481,6 +481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _explosionPrefab: {fileID: 269815926857091452, guid: 0e738b7210548aa49aed75cc596122e8,
     type: 3}
+  _worldItemParent: {fileID: 1202332511}
   _worldItems: []
 --- !u!4 &628480508
 Transform:
@@ -995,6 +996,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1202332512}
     m_Modifications:
+    - target: {fileID: 2123381719779168022, guid: e2b96e2277f2f2c4a929c847f7e9ce32,
+        type: 3}
+      propertyPath: _hitSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 600ffe201823c8243900e8baff95b4fc,
+        type: 3}
     - target: {fileID: 8259778830649416123, guid: e2b96e2277f2f2c4a929c847f7e9ce32,
         type: 3}
       propertyPath: m_Name

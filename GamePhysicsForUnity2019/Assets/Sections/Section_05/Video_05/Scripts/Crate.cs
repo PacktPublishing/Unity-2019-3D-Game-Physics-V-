@@ -1,5 +1,4 @@
 ﻿using RMC.UnityGamePhysics.Shared;
-using System.Collections;
 using UnityEngine;
 
 namespace RMC.UnityGamePhysics.Sections.Section05.Video05
@@ -35,17 +34,10 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			{
 				if (delta > 10)
 				{
-					StartCoroutine(SetSpriteTemporarilyCoroutine(_hitSprite));
+					_spriteRenderer.sprite = _hitSprite;
 					SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.CollisionSound);
 				}
 			}
-		}
-
-		private IEnumerator SetSpriteTemporarilyCoroutine(Sprite sprite)
-		{
-			_spriteRenderer.sprite = sprite;
-			yield return new WaitForSeconds(0.5f);
-			_spriteRenderer.sprite = _idleSprite;
 		}
 	}
 }

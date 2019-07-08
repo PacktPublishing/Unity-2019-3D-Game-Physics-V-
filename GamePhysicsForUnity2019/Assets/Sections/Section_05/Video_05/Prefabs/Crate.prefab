@@ -160,4 +160,4 @@ MonoBehaviour:
   _worldItem: {fileID: 1295098431296688427}
   _spriteRenderer: {fileID: 4869578511160470446}
   _idleSprite: {fileID: 21300000, guid: fd3b3e60721e323458dadb41d9e166fb, type: 3}
-  _hitSprite: {fileID: 21300000, guid: bd531356b64cb334d93616276b13bb04, type: 3}
+  _hitSprite: {fileID: 21300000, guid: 600ffe201823c8243900e8baff95b4fc, type: 3}
