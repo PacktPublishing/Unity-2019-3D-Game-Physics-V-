@@ -487,7 +487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9083421de2c8547a85fc6353186537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explosionPrefab: {fileID: 0}
   _worldItemParent: {fileID: 1202332511}
   _worldItems: []
 --- !u!4 &628480508
