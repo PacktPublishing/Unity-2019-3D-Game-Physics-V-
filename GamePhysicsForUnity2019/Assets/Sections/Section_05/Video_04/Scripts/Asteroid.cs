@@ -1,8 +1,10 @@
-﻿using RMC.UnityGamePhysics.Shared;
+﻿using System;
+using DG.Tweening;
+using RMC.UnityGamePhysics.Shared;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace RMC.UnityGamePhysics.Sections.Section05.Video04
+namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 {
 	/// <summary>
 	/// Detect if Mouse Clicks on Asteroid
@@ -42,6 +44,8 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 		protected void Start()
 		{
 			_originalPosition = transform.position;
+			transform.localScale = Vector3.zero;
+			transform.DOScale(1, 0.5f).SetEase(Ease.InOutElastic);
 		}
 
 		protected void Update()
@@ -96,7 +100,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 			Vector2 trajectory2D = -trajectory3D;
 			_rigidbody2D.AddForce(trajectory2D * _flightSpeed, ForceMode2D.Force);
 
-			SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.ShootAsteroidSound);
 			UpsetDucksGame.Instance.Asteroids--;
 		}
 	}

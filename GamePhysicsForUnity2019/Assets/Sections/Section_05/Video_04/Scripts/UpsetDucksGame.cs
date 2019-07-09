@@ -1,9 +1,8 @@
-﻿using RMC.UnityGamePhysics.Shared;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-namespace RMC.UnityGamePhysics.Sections.Section05.Video04
+namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 {
 	public class UpsetDucksGame : MonoBehaviour
 	{
@@ -46,9 +45,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 				}
 			}
 		}
-
-		[SerializeField]
-		private GameObject _explosionPrefab = null;
 
 		[SerializeField]
 		private GameObject _worldItemParent = null;
@@ -152,18 +148,10 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 
 		public void DestroyCrate(Crate crate)
 		{
-			SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.ExplosionSound);
-
-			GameObject explosion = Instantiate(_explosionPrefab);
-			explosion.transform.position = crate.transform.position;
-
 			_worldItems.Remove(crate.gameObject.GetComponent<WorldItem>());
 
 			StartCoroutine(DestroyGameObjectAfterXSeconds(crate.gameObject, 
 				UpsetDucksConstants.CrateDestroyDelay));
-
-			StartCoroutine(DestroyGameObjectAfterXSeconds(explosion.gameObject, 
-				UpsetDucksConstants.ExplosionDestroyDelay));
 		}
 
 		private IEnumerator DestroyGameObjectAfterXSeconds(GameObject go, float seconds)

@@ -1,7 +1,6 @@
-﻿using RMC.UnityGamePhysics.Shared;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace RMC.UnityGamePhysics.Sections.Section05.Video04
+namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 {
 	public class Crate : MonoBehaviour
 	{
@@ -26,8 +25,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 		{
 			if (_worldItem.Health <= 0)
 			{
-				SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.WinSound);
-
 				UpsetDucksGame.Instance.DestroyCrate(this);
 			}	
 			else
@@ -35,7 +32,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 				if (delta > UpsetDucksConstants.MinCrateHealthChangeForReaction)
 				{
 					_spriteRenderer.sprite = _hitSprite;
-					SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.CollisionSound);
 				}
 			}
 		}

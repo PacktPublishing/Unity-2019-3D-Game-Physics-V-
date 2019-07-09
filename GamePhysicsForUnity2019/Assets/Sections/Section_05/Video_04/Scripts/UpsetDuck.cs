@@ -1,8 +1,7 @@
-﻿using RMC.UnityGamePhysics.Shared;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
-namespace RMC.UnityGamePhysics.Sections.Section05.Video04
+namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 {
 	public class UpsetDuck : MonoBehaviour
 	{
@@ -31,15 +30,12 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 			if (_worldItem.Health <= 0)
 			{
 				_spriteRenderer.sprite = _deadSprite;
-				SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.WinSound);
-				
 			}
 			else
 			{
 				if (delta > UpsetDucksConstants.MinUpsetDuckHealthChangeForReaction)
 				{
 					StartCoroutine(SetSpriteTemporarilyCoroutine(_hitSprite));
-					SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.CollisionSound);
 				}
 			}
 		}
