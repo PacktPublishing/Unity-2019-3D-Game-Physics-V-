@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3415429007492231568}
   - component: {fileID: 3415429007492231575}
   - component: {fileID: 3449386111832921950}
-  - component: {fileID: -2616788641565064452}
+  - component: {fileID: -3818111919019599883}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Untagged
@@ -99,7 +99,7 @@ Rigidbody2D:
   m_LinearDrag: 0.5
   m_AngularDrag: 3
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 319817e6d8df77d43804f2d47bfe4f19, type: 2}
+  m_Material: {fileID: 6200000, guid: 1eb37a913ffd08a439ee9df27517a23a, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -139,7 +139,7 @@ TargetJoint2D:
   m_MaxForce: 10000
   m_DampingRatio: 1
   m_Frequency: 5
---- !u!114 &-2616788641565064452
+--- !u!114 &-3818111919019599883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3415429007492231572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd4cc7f71a0abf498536ed0bf0f6d8b, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cd080bc6114d844890e84c404fb02df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MaxDragDistance: 2
