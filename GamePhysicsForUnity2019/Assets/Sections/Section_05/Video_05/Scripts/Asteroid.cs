@@ -15,8 +15,14 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		public Rigidbody2D Rigidbody2D { get { return _rigidbody2D; } }
 		public TargetJoint2D TargetJoint2D { get { return _targetJoint2D; } }
 
+		/// <summary>
+		/// Has it been released by the mouse yet
+		/// </summary>
 		public bool IsReleased { get { return _isReleased; } }
 
+		/// <summary>
+		/// How far can it be dragged from the center point
+		/// </summary>
 		public float MaxDragDistance = 10.3f;
 
 		[SerializeField]
@@ -25,8 +31,12 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		[SerializeField]
 		private Rigidbody2D _rigidbody2D = null;
 
+		/// <summary>
+		/// The speed factor applied once the mouse drag is released
+		/// </summary>
 		[SerializeField]
 		private float _flightSpeed = 200;
+
 		private Vector3 _originalPosition = new Vector3();
 		private bool _isDragging = false;
 		private bool _isReleased = false;
@@ -34,7 +44,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		protected void Start()
 		{
 			_originalPosition = transform.position;
-			transform.localScale = new Vector3(0, 0, 0);
+			transform.localScale = Vector3.zero;
 			transform.DOScale(1, 0.5f).SetEase(Ease.InOutElastic);
 		}
 
@@ -47,10 +57,9 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 			if (_isDragging)
 			{
-				Vector3 newPosition = Input.mousePosition;
-				newPosition = Camera.main.ScreenToWorldPoint(newPosition);
+				Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-				float distance3D = Vector3.Distance(newPosition, _originalPosition);
+				float distance3D = Vector2.Distance(newPosition, _originalPosition);
 				if (distance3D < MaxDragDistance)
 				{
 					_targetJoint2D.target = new Vector2(newPosition.x, newPosition.y);
@@ -90,7 +99,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			Vector3 trajectory3D = transform.position - _originalPosition;
 			Vector2 trajectory2D = -trajectory3D;
 			_rigidbody2D.AddForce(trajectory2D * _flightSpeed, ForceMode2D.Force);
-
 
 			SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.ShootAsteroidSound);
 			UpsetDucksGame.Instance.Asteroids--;

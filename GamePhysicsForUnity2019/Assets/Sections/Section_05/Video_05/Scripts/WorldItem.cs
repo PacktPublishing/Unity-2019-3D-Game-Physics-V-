@@ -7,8 +7,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 	public class WorldItem : MonoBehaviour
 	{
-		public const float MIN_MAGNITUDE_FOR_DAMAGE = 3;
-
 		public float Health { get { return _health; } }
 
 		[Range (0, 100)]
@@ -32,7 +30,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 			float magnitude = collision2D.relativeVelocity.magnitude;
 
-			if (magnitude < MIN_MAGNITUDE_FOR_DAMAGE)
+			if (magnitude < UpsetDucksConstants.MinMagnitudeForDamage)
 			{
 				return;
 			}

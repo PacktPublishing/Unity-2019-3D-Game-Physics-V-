@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baceb91cf3fed0845be96f36a7f1694d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDragDistance: 10.3
+  MaxDragDistance: 2
   _targetJoint2D: {fileID: 3449386111832921950}
   _rigidbody2D: {fileID: 3415429007492231568}
   _flightSpeed: 400

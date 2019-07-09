@@ -32,7 +32,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			}	
 			else
 			{
-				if (delta > 10)
+				if (delta > UpsetDucksConstants.MinCrateHealthChangeForReaction)
 				{
 					_spriteRenderer.sprite = _hitSprite;
 					SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.CollisionSound);

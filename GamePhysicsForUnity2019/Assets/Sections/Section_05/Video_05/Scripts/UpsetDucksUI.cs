@@ -26,11 +26,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			_instance = this;
 		}
 
-		protected void Start()
-		{
-			//Debug.Log("Start");
-		}
-
 		public void ShowAsteroids(int value)
 		{
 			_asteroidsText.text = string.Format("Asteroids: {0:00}", value);
@@ -51,7 +46,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			{
 				_resultText.text = string.Format("You Lose!");
 			}
-			
 		}
 	}
 }

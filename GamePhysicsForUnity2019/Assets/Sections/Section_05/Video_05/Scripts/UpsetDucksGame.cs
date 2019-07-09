@@ -69,7 +69,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		protected void Start()
 		{
 			//Default 0.005 - Change to make turns end more quickly
-			Physics.sleepThreshold = 0.5f;
+			Physics.sleepThreshold = UpsetDucksConstants.PhysicsSleepThreshold;
 
 			// Reset values
 			_isGameOver = false;
@@ -88,7 +88,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			}
 
 			Score = 0;
-			Asteroids = 3;
+			Asteroids = UpsetDucksConstants.MaxAsteroidsPerGame;
 
 			// Start the catapult
 			AddAsteroid();
@@ -119,7 +119,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 					if (worldItem.IsAlive && worldItem.Health <= 0)
 					{
 						worldItem.IsAlive = false;
-						Score += 1;
+						Score += UpsetDucksConstants.PointsPerUpsetDuck;
 					}
 				}
 			}
@@ -159,8 +159,11 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 			_worldItems.Remove(crate.gameObject.GetComponent<WorldItem>());
 
-			StartCoroutine(DestroyGameObjectAfterXSeconds(crate.gameObject, 0));
-			StartCoroutine(DestroyGameObjectAfterXSeconds(explosion.gameObject, 0.25f));
+			StartCoroutine(DestroyGameObjectAfterXSeconds(crate.gameObject, 
+				UpsetDucksConstants.CrateDestroyDelay));
+
+			StartCoroutine(DestroyGameObjectAfterXSeconds(explosion.gameObject, 
+				UpsetDucksConstants.ExplosionDestroyDelay));
 		}
 
 		private IEnumerator DestroyGameObjectAfterXSeconds(GameObject go, float seconds)

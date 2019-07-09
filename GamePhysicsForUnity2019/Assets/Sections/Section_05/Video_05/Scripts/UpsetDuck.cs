@@ -36,7 +36,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			}
 			else
 			{
-				if (delta > 10)
+				if (delta > UpsetDucksConstants.MinUpsetDuckHealthChangeForReaction)
 				{
 					StartCoroutine(SetSpriteTemporarilyCoroutine(_hitSprite));
 					SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.CollisionSound);
@@ -47,7 +47,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		private IEnumerator SetSpriteTemporarilyCoroutine(Sprite sprite)
 		{
 			_spriteRenderer.sprite = sprite;
-			yield return new WaitForSeconds(0.5f);
+			yield return new WaitForSeconds(UpsetDucksConstants.UpsetDuckSpriteFlickerDelay);
 			_spriteRenderer.sprite = _idleSprite;
 		}
 	}
