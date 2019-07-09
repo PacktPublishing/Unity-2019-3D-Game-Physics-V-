@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using RMC.UnityGamePhysics.Shared;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace RMC.UnityGamePhysics.Sections.Section05.Video05
@@ -41,10 +42,12 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			if (isWin)
 			{
 				_resultText.text = string.Format("You Win!");
+				SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.WinSound);
 			}
 			else
 			{
 				_resultText.text = string.Format("You Lose!");
+				SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.LoseSound);
 			}
 		}
 	}
