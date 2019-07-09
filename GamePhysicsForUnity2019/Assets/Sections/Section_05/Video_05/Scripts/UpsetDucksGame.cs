@@ -68,7 +68,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 		protected void Start()
 		{
-			//Default 0.005 - Change to make turns end more quickly
+			
 			Physics.sleepThreshold = UpsetDucksConstants.PhysicsSleepThreshold;
 
 			// Reset values
