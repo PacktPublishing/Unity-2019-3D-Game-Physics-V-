@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace RMC.UnityGamePhysics.Sections.Section05.Video05
+namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 {
 	public class UpsetDuck : MonoBehaviour
 	{
@@ -27,9 +27,15 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 		private void WorldItem_OnHealthChange(float delta)
 		{
+			if (!_worldItem.IsAlive)
+			{
+				return;
+			}
+
 			if (_worldItem.Health <= 0)
 			{
 				_spriteRenderer.sprite = _deadSprite;
+
 			}
 			else
 			{
@@ -44,7 +50,11 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		{
 			_spriteRenderer.sprite = sprite;
 			yield return new WaitForSeconds(UpsetDucksConstants.UpsetDuckSpriteFlickerDelay);
-			_spriteRenderer.sprite = _idleSprite;
+
+			if (_worldItem.IsAlive)
+			{
+				_spriteRenderer.sprite = _idleSprite;
+			}
 		}
 	}
 }

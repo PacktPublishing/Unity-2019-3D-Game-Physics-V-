@@ -1,10 +1,8 @@
-﻿using System;
-using DG.Tweening;
-using RMC.UnityGamePhysics.Shared;
+﻿using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace RMC.UnityGamePhysics.Sections.Section05.Video05
+namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 {
 	/// <summary>
 	/// Detect if Mouse Clicks on Asteroid

@@ -1,4 +1,4 @@
-﻿namespace RMC.UnityGamePhysics.Sections.Section05.Video05
+﻿namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 {
 	public static class UpsetDucksConstants 
 	{

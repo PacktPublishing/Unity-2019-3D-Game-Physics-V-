@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-namespace RMC.UnityGamePhysics.Sections.Section05.Video04
+namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 {
 	public class Catapult : MonoBehaviour
 	{

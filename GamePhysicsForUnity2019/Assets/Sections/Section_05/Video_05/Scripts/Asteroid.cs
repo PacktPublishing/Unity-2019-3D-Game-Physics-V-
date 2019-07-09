@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace RMC.UnityGamePhysics.Sections.Section05.Video04
+namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 {
 	/// <summary>
 	/// Detect if Mouse Clicks on Asteroid

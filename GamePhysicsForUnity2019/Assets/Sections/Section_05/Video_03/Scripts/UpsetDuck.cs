@@ -27,6 +27,11 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video03
 
 		private void WorldItem_OnHealthChange(float delta)
 		{
+			if (!_worldItem.IsAlive)
+			{
+				return;
+			}
+
 			if (_worldItem.Health <= 0)
 			{
 				_spriteRenderer.sprite = _deadSprite;
@@ -45,7 +50,11 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video03
 		{
 			_spriteRenderer.sprite = sprite;
 			yield return new WaitForSeconds(UpsetDucksConstants.UpsetDuckSpriteFlickerDelay);
-			_spriteRenderer.sprite = _idleSprite;
+
+			if (_worldItem.IsAlive)
+			{
+				_spriteRenderer.sprite = _idleSprite;
+			}
 		}
 	}
 }

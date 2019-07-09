@@ -1,7 +1,7 @@
 ﻿using RMC.UnityGamePhysics.Shared;
 using UnityEngine;
 
-namespace RMC.UnityGamePhysics.Sections.Section05.Video04
+namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 {
 	public class Crate : MonoBehaviour
 	{

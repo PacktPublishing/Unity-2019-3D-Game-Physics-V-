@@ -1,8 +1,7 @@
-﻿using RMC.UnityGamePhysics.Shared;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
-namespace RMC.UnityGamePhysics.Sections.Section05.Video04
+namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 {
 	public class UpsetDuck : MonoBehaviour
 	{
@@ -28,18 +27,21 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 
 		private void WorldItem_OnHealthChange(float delta)
 		{
+			if (!_worldItem.IsAlive)
+			{
+				return;
+			}
+
 			if (_worldItem.Health <= 0)
 			{
 				_spriteRenderer.sprite = _deadSprite;
-				SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.WinSound);
-				
+
 			}
 			else
 			{
 				if (delta > UpsetDucksConstants.MinUpsetDuckHealthChangeForReaction)
 				{
 					StartCoroutine(SetSpriteTemporarilyCoroutine(_hitSprite));
-					SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.CollisionSound);
 				}
 			}
 		}
@@ -48,7 +50,11 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 		{
 			_spriteRenderer.sprite = sprite;
 			yield return new WaitForSeconds(UpsetDucksConstants.UpsetDuckSpriteFlickerDelay);
-			_spriteRenderer.sprite = _idleSprite;
+
+			if (_worldItem.IsAlive)
+			{
+				_spriteRenderer.sprite = _idleSprite;
+			}
 		}
 	}
 }
