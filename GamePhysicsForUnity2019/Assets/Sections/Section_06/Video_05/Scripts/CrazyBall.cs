@@ -40,8 +40,7 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 			if (CrazyBallGame.Instance.IsGameOver)
 			{
 				// When the game ends, come to a quick but gradual stop
-				_rigidbody.drag = 5;
-				_rigidbody.angularDrag = 5;
+				_rigidbody.angularDrag = CrazyBallConstants.CrazyBallAngularDragAtFinishArea;
 				return;
 			}
 
@@ -63,6 +62,16 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 			}
 		}
 
+		protected void OnCollisionEnter(Collision collision)
+		{
+			if (collision.gameObject.layer == LayerMask.NameToLayer (CrazyBallConstants.FloorLayer))
+			{
+				return;
+			}
+
+			SoundManager.Instance.PlayAudioClip(CrazyBallConstants.CollisionSound);
+		}
+
 		protected void OnTriggerEnter(Collider collider)
 		{
 			if (collider.gameObject.tag == CrazyBallConstants.CoinTag)
@@ -71,7 +80,7 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 				if (coin != null && coin.IsAlive)
 				{
 					coin.DestroyMe();
-					CrazyBallGame.Instance.Score++;
+					CrazyBallGame.Instance.Score += CrazyBallConstants.PointsPerCoin;
 					SoundManager.Instance.PlayAudioClip(CrazyBallConstants.CoinSound);
 				}
 			}

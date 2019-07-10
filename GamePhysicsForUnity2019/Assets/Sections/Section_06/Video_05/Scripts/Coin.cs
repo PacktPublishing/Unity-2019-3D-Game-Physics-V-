@@ -5,8 +5,6 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 {
 	public class Coin : MonoBehaviour
 	{
-		private Vector3 _rotationPerFrame = new Vector3(0, 2f, 0);
-
 		public bool IsAlive = true;
 
 		protected void Update()
@@ -16,14 +14,16 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 				return;
 			}
 
-			transform.Rotate(_rotationPerFrame);
+			transform.Rotate(CrazyBallConstants.CoinRotationPerFrame);
 		}
 
 		public void DestroyMe()
 		{
 			IsAlive = false;
-			transform.DOScale(.01f, .25f).
-				SetEase(Ease.InElastic).
+
+			transform.DOScale(CrazyBallConstants.CoinDestroyEndSize,
+				CrazyBallConstants.CoinDestroyEndDuration).
+				SetEase(Ease.OutElastic).
 				OnComplete(DoTween_OnComplete);
 		}
 
