@@ -1,6 +1,4 @@
-﻿using RMC.UnityGamePhysics.Shared;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 {
 	public class CrazyBallGame : MonoBehaviour
@@ -38,6 +36,8 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 			}
 		}
 
+		public bool IsGameOver { get { return _isGameOver; } }
+
 		private float _timeLeft = 0;
 		private int _score = 0;
 		private bool _isGameOver = false;
@@ -65,11 +65,20 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 			if (TimeLeft <= 0)
 			{
 				TimeLeft = 0;
-				CrazyBallUI.Instance.ShowResult(false);
-				SoundManager.Instance.PlayAudioClip(CrazyBallConstants.LoseSound);
-				_isGameOver = true;
+				EndTheGame(false);
 			}
-			
+		}
+
+		public void EndTheGame (bool isWin)
+		{
+			if (_isGameOver)
+			{
+				return;
+			}
+
+			_isGameOver = true;
+
+			CrazyBallUI.Instance.ShowResult(isWin);
 		}
 	}
 }

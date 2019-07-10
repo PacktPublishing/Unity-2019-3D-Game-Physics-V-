@@ -1,5 +1,4 @@
-﻿using System;
-using DG.Tweening;
+﻿using DG.Tweening;
 using UnityEngine;
 
 namespace RMC.UnityGamePhysics.Sections.Section06.Video05
@@ -10,18 +9,23 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 
 		public bool IsAlive = true;
 
-		public void Update()
+		protected void Update()
 		{
+			if (CrazyBallGame.Instance.IsGameOver)
+			{
+				return;
+			}
+
 			transform.Rotate(_rotationPerFrame);
 		}
 
-		public void DestroyMe()	
+		public void DestroyMe()
 		{
 			IsAlive = false;
 			transform.DOScale(.01f, .25f).
 				SetEase(Ease.InElastic).
 				OnComplete(DoTween_OnComplete);
-		}	
+		}
 
 		private void DoTween_OnComplete()
 		{
