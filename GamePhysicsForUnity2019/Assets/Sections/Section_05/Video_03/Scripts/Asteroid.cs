@@ -1,5 +1,4 @@
-﻿using DG.Tweening;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace RMC.UnityGamePhysics.Sections.Section05.Video03
@@ -42,8 +41,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video03
 		protected void Start()
 		{
 			_originalPosition = transform.position;
-			transform.localScale = Vector3.zero;
-			transform.DOScale(1, 0.5f).SetEase(Ease.InOutElastic);
 		}
 
 		protected void Update()
@@ -97,8 +94,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video03
 			Vector3 trajectory3D = transform.position - _originalPosition;
 			Vector2 trajectory2D = -trajectory3D;
 			_rigidbody2D.AddForce(trajectory2D * _flightSpeed, ForceMode2D.Force);
-
-			UpsetDucksGame.Instance.Asteroids--;
 		}
 	}
 }
