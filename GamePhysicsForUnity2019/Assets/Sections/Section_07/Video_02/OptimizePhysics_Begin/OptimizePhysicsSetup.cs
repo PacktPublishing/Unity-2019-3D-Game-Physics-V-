@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-namespace RMC.UnityGamePhysics.Sections.Section07.Video02.OptimizePhysics_Complete
+namespace RMC.UnityGamePhysics.Sections.Section07.Video02.OptimizePhysics_Begin
 {
-	public class OptimizePhysicsSetup: MonoBehaviour
+	public class OptimizePhysicsSetup : MonoBehaviour
 	{
 		protected void Awake()
 		{
@@ -31,8 +31,8 @@ namespace RMC.UnityGamePhysics.Sections.Section07.Video02.OptimizePhysics_Comple
 			// Ex. 1.0f is high framerate but poor physics accuracy
 			// Ex. 0.08f is a good compromise
 			// Ex. 0.02f is low framerate but high physics accuracy
-			Time.fixedDeltaTime = .08f;
-			Time.maximumDeltaTime = 1;
+			//Time.fixedDeltaTime = .08f;
+			//Time.maximumDeltaTime = 1;
 
 			// 5
 			// Go to the one light in the scene and turn off shadows 
@@ -52,7 +52,8 @@ namespace RMC.UnityGamePhysics.Sections.Section07.Video02.OptimizePhysics_Comple
 			// Go to the Thing prefab. Use a primitive collider (box) not the mesh collider
 
 			// 9
-			//Open Menu: Unity -> Edit -> Project Settings -> Physics -> Adaptive Force... (Enable For Possible Improvements? Not for me.)
+			//Open Menu: Unity -> Edit -> Project Settings -> Physics -> Adaptive Force... 
+			//	(Enable For Possible Improvements? Not for me.)
 
 
 		}
