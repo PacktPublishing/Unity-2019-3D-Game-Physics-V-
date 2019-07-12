@@ -42,12 +42,12 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 		{
 			if (isWin)
 			{
-				_resultText.text = string.Format("You Win!");
+				_resultText.text = string.Format(CrazyBallConstants.WinText);
 				SoundManager.Instance.PlayAudioClip(CrazyBallConstants.WinSound);
 			}
 			else
 			{
-				_resultText.text = string.Format("You Lose!");
+				_resultText.text = string.Format(CrazyBallConstants.LoseText);
 				SoundManager.Instance.PlayAudioClip(CrazyBallConstants.LoseSound);
 			}
 		}

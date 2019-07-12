@@ -27,5 +27,8 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 
 		public static int MaxTime = 30;
 		public static int PointsPerCoin = 1;
+
+		public static string WinText = "You Win!";
+		public static string LoseText = "You Lose!";
 	}
 }

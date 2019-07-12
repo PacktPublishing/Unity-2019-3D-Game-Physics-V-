@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace RMC.UnityGamePhysics.Sections.Section06.Video05
+namespace RMC.UnityGamePhysics.Sections.Section06.Shared
 {
 	/// <summary>
 	/// Let the cube fall from starting position and come to a rest
