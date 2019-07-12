@@ -1,5 +1,4 @@
-﻿using DG.Tweening;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 {
@@ -17,18 +16,13 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 			transform.Rotate(CrazyBallConstants.CoinRotationPerFrame);
 		}
 
+		/// <summary>
+		/// This custom destroy method is used so that LATER
+		/// we can add an fade-out animation
+		/// </summary>
 		public void DestroyMe()
 		{
 			IsAlive = false;
-
-			transform.DOScale(CrazyBallConstants.CoinDestroyEndSize,
-				CrazyBallConstants.CoinDestroyEndDuration).
-				SetEase(Ease.OutElastic).
-				OnComplete(DoTween_OnComplete);
-		}
-
-		private void DoTween_OnComplete()
-		{
 			Destroy(gameObject);
 		}
 	}
