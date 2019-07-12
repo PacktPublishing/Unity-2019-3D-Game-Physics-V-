@@ -26,6 +26,9 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 			_instance = this;
 		}
 
+		////////////////////////////////
+		// 1. Here we update the texts
+		////////////////////////////////	
 		public void ShowAsteroids(int value)
 		{
 			_asteroidsText.text = string.Format("Asteroids: {0:00}", value);

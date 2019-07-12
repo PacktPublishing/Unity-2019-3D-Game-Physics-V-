@@ -72,7 +72,9 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 			_currentAsteroid = null;
 			_upsetDuckCount = 0;
 
-			// Create new list of worldItems
+			////////////////////////////////
+			// 1. Create new list of worldItems
+			////////////////////////////////
 			_worldItems = _worldItemParent.GetComponentsInChildren<WorldItem>().ToList();
 			foreach (WorldItem worldItem in _worldItems)
 			{
@@ -83,6 +85,9 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 				}
 			}
 
+			////////////////////////////////
+			// 2. Set Beginner Gameplay Values
+			////////////////////////////////	
 			Score = 0;
 			Asteroids = UpsetDucksConstants.MaxAsteroidsPerGame;
 
@@ -107,11 +112,13 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 				}
 			}
 
+			////////////////////////////////
+			// 3. Check for dead ducks, give points
+			////////////////////////////////	
 			foreach (WorldItem worldItem in _worldItems)
 			{
 				if (worldItem.gameObject.tag == UpsetDucksConstants.UpsetDuckTag)
 				{
-					
 					if (worldItem.IsAlive && worldItem.Health <= 0)
 					{
 						worldItem.IsAlive = false;
@@ -120,6 +127,9 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 				}
 			}
 
+			////////////////////////////////
+			// 4. Check GameOver
+			////////////////////////////////	
 			if (Score >= _upsetDuckCount)
 			{
 				if (UpsetDucksUI.Instance != null)
