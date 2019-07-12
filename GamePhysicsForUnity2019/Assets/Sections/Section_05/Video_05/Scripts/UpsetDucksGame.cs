@@ -152,8 +152,14 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 		public void DestroyCrate(Crate crate)
 		{
+			/////////////////////////////
+			//1. Play Sound
+			/////////////////////////////
 			SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.ExplosionSound);
 
+			/////////////////////////////
+			//2. Play Sound
+			/////////////////////////////
 			GameObject explosion = Instantiate(_explosionPrefab);
 			explosion.transform.position = crate.transform.position;
 
@@ -168,6 +174,9 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 
 		private IEnumerator DestroyGameObjectAfterXSeconds(GameObject go, float seconds)
 		{
+			/////////////////////////////
+			//3. Destroy Explosion after a few seconds
+			/////////////////////////////
 			yield return new WaitForSeconds(seconds);
 			Destroy(go);
 		}

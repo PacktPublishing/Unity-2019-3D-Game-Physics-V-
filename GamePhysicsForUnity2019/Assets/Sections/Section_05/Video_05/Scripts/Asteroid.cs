@@ -1,4 +1,5 @@
-﻿using RMC.UnityGamePhysics.Shared;
+﻿using DG.Tweening;
+using RMC.UnityGamePhysics.Shared;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -42,6 +43,12 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 		protected void Start()
 		{
 			_originalPosition = transform.position;
+
+			/////////////////////////////
+			//1. Programmatic animation - Scaling from 0 to 1
+			/////////////////////////////
+			transform.localScale = Vector3.zero;
+			transform.DOScale(1, 0.5f).SetEase(Ease.InOutElastic);
 		}
 
 		protected void Update()
