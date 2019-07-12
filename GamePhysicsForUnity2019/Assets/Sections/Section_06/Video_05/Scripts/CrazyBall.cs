@@ -9,7 +9,7 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 		private bool _isDebug = false;
 
 		[SerializeField]
-		private float _speed = 50;
+		private float _speed = 20;
 
 		[SerializeField]
 		private Rigidbody _rigidbody = null;
@@ -55,7 +55,7 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 								Color.red, 0.01f);
 			}
 
-			// Only allow forces if we are on the ground and not going to fast
+			// Only allow forces if we are on the ground and not going too fast
 			if (_isCrazyBallGrounded && !_isSpeedTooHigh)
 			{
 				_rigidbody.AddForce(_lastInput * _speed, ForceMode.Force);
