@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4021587766272919913}
   - component: {fileID: 7026432888512923819}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: JumpingCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,3 +121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2591d167ddc8bc4bae95f4c190f5b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rigidBody: {fileID: 4021587766272919913}
+  _force: {x: 0, y: 5.01, z: 5}
+  _predictionSteps: 8
+  _predictionTotalIterations: 453
+  _markerPrefab: {fileID: 5814051322857219136, guid: 35e6cf6bd20f21f44b5271b73c3b71be,
+    type: 3}

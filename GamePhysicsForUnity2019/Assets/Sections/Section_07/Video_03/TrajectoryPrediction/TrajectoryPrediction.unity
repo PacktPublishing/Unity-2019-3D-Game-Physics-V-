@@ -231,47 +231,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7026432888512923819, guid: a5c68e238f5a2e649ba8d097c6fe0ef2,
-        type: 3}
-      propertyPath: applyForce.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7026432888512923819, guid: a5c68e238f5a2e649ba8d097c6fe0ef2,
-        type: 3}
-      propertyPath: applyForce.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7026432888512923819, guid: a5c68e238f5a2e649ba8d097c6fe0ef2,
-        type: 3}
-      propertyPath: _force.y
-      value: 5.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 7026432888512923819, guid: a5c68e238f5a2e649ba8d097c6fe0ef2,
-        type: 3}
-      propertyPath: _force.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7026432888512923819, guid: a5c68e238f5a2e649ba8d097c6fe0ef2,
-        type: 3}
-      propertyPath: _predictionSteps
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7026432888512923819, guid: a5c68e238f5a2e649ba8d097c6fe0ef2,
-        type: 3}
-      propertyPath: _markerPrefab
-      value: 
-      objectReference: {fileID: 5814051322857219136, guid: 35e6cf6bd20f21f44b5271b73c3b71be,
-        type: 3}
-    - target: {fileID: 7026432888512923819, guid: a5c68e238f5a2e649ba8d097c6fe0ef2,
-        type: 3}
-      propertyPath: _rigidBody
-      value: 
-      objectReference: {fileID: 4021587766272919913}
-    - target: {fileID: 7026432888512923819, guid: a5c68e238f5a2e649ba8d097c6fe0ef2,
-        type: 3}
-      propertyPath: _predictionTotalIterations
-      value: 453
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5c68e238f5a2e649ba8d097c6fe0ef2, type: 3}
 --- !u!1 &705507993
@@ -765,9 +724,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &4021587766272919913 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 4021587766272919913, guid: a5c68e238f5a2e649ba8d097c6fe0ef2,
-    type: 3}
-  m_PrefabInstance: {fileID: 339933229}
-  m_PrefabAsset: {fileID: 0}
