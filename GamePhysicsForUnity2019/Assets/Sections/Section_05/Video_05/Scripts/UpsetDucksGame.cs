@@ -158,7 +158,7 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video05
 			SoundManager.Instance.PlayAudioClip(UpsetDucksConstants.ExplosionSound);
 
 			/////////////////////////////
-			//2. Play Sound
+			//2. Create Explosion
 			/////////////////////////////
 			GameObject explosion = Instantiate(_explosionPrefab);
 			explosion.transform.position = crate.transform.position;
