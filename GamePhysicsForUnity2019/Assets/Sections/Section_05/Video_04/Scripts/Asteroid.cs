@@ -1,5 +1,4 @@
-﻿using DG.Tweening;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace RMC.UnityGamePhysics.Sections.Section05.Video04
@@ -42,8 +41,6 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video04
 		protected void Start()
 		{
 			_originalPosition = transform.position;
-			transform.localScale = Vector3.zero;
-			transform.DOScale(1, 0.5f).SetEase(Ease.InOutElastic);
 		}
 
 		protected void Update()
