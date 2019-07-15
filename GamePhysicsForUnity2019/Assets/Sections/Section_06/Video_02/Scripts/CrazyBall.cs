@@ -15,24 +15,23 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video02
 
 		private Vector3 _lastInput = Vector3.zero;
 
-		private bool _isSpeedTooHigh = false;
-
 		protected void Update()
 		{
+			/////////////////////////////
+			//1. Capture Keyboard Input
+			/////////////////////////////
 			float moveHorizontal = Input.GetAxis("Horizontal");
 			float moveVertical = Input.GetAxis("Vertical");
-
 			_lastInput = new Vector3(moveHorizontal, 0.0f, moveVertical);
-			_isSpeedTooHigh = _rigidbody.velocity.magnitude > CrazyBallConstants.CrazyBallMaxSpeed;
+
 		}
 
 		protected void FixedUpdate()
 		{
-			// Only allow forces if we are on the ground and not going too fast
-			if (!_isSpeedTooHigh)
-			{
-				_rigidbody.AddForce(_lastInput * _speed, ForceMode.Force);
-			}
+			/////////////////////////////
+			//2. Use Physics Motion
+			/////////////////////////////
+			_rigidbody.AddForce(_lastInput * _speed, ForceMode.Force);
 		}
 	}
 }

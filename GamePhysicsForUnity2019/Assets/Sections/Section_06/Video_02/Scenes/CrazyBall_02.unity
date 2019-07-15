@@ -272,5 +272,110 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 5914044717971159034}
+    - target: {fileID: 7616408834070842166, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.184
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408833372024872, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408833395416337, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408833435538764, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408833467376708, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408833562901135, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408833625705308, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408833848492000, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408833867825640, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408833874579463, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408833884038763, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408834003660336, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408834071271190, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408834180039950, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408834349826807, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408834390066768, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408834658821033, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408834807143610, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408834818293898, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408835382745590, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7616408835459900504, guid: 490cc709e32a645438abafd28aead3c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall (20)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 490cc709e32a645438abafd28aead3c5, type: 3}
