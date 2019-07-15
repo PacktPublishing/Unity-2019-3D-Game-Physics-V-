@@ -81,6 +81,10 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 				{
 					coin.DestroyMe();
 					CrazyBallGame.Instance.Score += CrazyBallConstants.PointsPerCoin;
+
+					//////////////////////////////////
+					//1. Play Sound
+					//////////////////////////////////
 					SoundManager.Instance.PlayAudioClip(CrazyBallConstants.CoinSound);
 				}
 			}

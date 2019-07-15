@@ -43,11 +43,19 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video05
 			if (isWin)
 			{
 				_resultText.text = string.Format(CrazyBallConstants.WinText);
+
+				//////////////////////////////////
+				//1. Play Sound
+				//////////////////////////////////
 				SoundManager.Instance.PlayAudioClip(CrazyBallConstants.WinSound);
 			}
 			else
 			{
 				_resultText.text = string.Format(CrazyBallConstants.LoseText);
+
+				//////////////////////////////////
+				//2. Play Sound
+				//////////////////////////////////
 				SoundManager.Instance.PlayAudioClip(CrazyBallConstants.LoseSound);
 			}
 		}
