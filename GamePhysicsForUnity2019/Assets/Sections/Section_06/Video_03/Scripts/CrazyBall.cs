@@ -1,5 +1,4 @@
-﻿using RMC.UnityGamePhysics.Shared;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace RMC.UnityGamePhysics.Sections.Section06.Video03
 {
