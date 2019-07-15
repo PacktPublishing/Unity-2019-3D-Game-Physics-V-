@@ -38,6 +38,9 @@ namespace RMC.UnityGamePhysics.Sections.Section06.Video03
 
 		protected void OnTriggerEnter(Collider collider)
 		{
+			/////////////////////////////
+			//1. Detect and collect the coin
+			/////////////////////////////
 			if (collider.gameObject.tag == CrazyBallConstants.CoinTag)
 			{
 				Coin coin = collider.gameObject.GetComponent<Coin>();
