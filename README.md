@@ -9,7 +9,7 @@ Enjoy!
 
 **Setup**
 
-* <a href="https://unity3d.com/get-unity/download">Download</a> the latest public version of Unity (Unity 2019.1.x or later)
+* <a href="https://unity3d.com/get-unity/download" target="_blank">Download</a> the latest public version of Unity (Unity 2019.1.x or later)
 * Open Unity
 * Open one of the two project(s) below. 
 
@@ -49,7 +49,7 @@ Sam’s mission is to educate and entertain with interactive technology and to c
 
 Sam is available for remote, contract hire as a Unity Game Developer, a Unity Tools Developer, and a teacher of Unity.
 
-For resume, portfolio, and contact information visit <a href="http://www.SamuelAsherRivello.com">SamuelAsherRivello.com</a>. 
+For resume, portfolio, and contact information visit <a href="http://www.SamuelAsherRivello.com" target="_blank">SamuelAsherRivello.com</a>. 
 
-For any comments and questions or to say hello, tweet me at <a href="https://twitter.com/srivello/">@srivello</a> :)
+For any comments and questions or to say hello, tweet me at <a href="https://twitter.com/srivello/" target="_blank">@srivello</a> :)
 
