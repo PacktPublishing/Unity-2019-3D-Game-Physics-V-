@@ -1,55 +1,56 @@
-GamePhysicsForUnity2019
-=============
+# Unity-2019-3D-Game-Physics-V-
+This is the code repository for [Unity 2019 3D Game Physics [Video]](https://www.packtpub.com/game-development/unity-2019-3d-game-physics-video), published by [Packt]
 
-This video course is divided into 7 major video sections. Each section covers one physics topic with a series of videos. 
+(https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the video course from start to finish.
+## About the Video Course
+Physics is really important for game programmers who want to add realism and functionality to their games. Collision detection, in particular, is a problem that affects all 
 
-This repository contains two Unity projects with 7 total code sections. Each code section corresponds to the video section mentioned above.
+game developers, regardless of the platform, engine, or toolkit they use. This course will help you to understand game physics better. You will practice creating your own 
 
-Enjoy!
+physics components and improve your knowledge of Newton's Laws of Motion and their applications to game development. This course will teach you the concepts and formulas 
 
-**Setup**
+behind collision detection. You will also be taught how to build a simple physics engine, where rigid body physics is the main focus, and learn about intersection algorithms 
 
-* <a href="https://unity3d.com/get-unity/download" target="_blank">Download</a> the latest public version of Unity (Unity 2019.1.x or later)
-* Open Unity
-* Open one of the two project(s) below. 
+for primitive shapes. You will be implementing 2D and 3D primitives, and we'll show you how to perform effective collision tests and cover one of the harder areas of game 
 
-**Features**
+development—collision detection and resolution. Further on, you will learn what a physics engine is, how to set up a game window, and how to implement rendering. You’ll also 
 
-* C# Programming
-* Unity 2D Physics
-* Unity 3D Physics
+find out how to implement a rudimentary physics engine, which you can use to build an "Angry Birds" type of game or a more advanced game. By the end of this course, you will 
 
-Summary Of Contents
-=============
+have gained confidence in translating theories of physics into working game code. You will have implemented all primitive and some advanced collision tests, and you will be 
 
-The codebase is divided into two Unity projects.
+able to read on geometry and linear Algebra formulas to take forward to your own games!
 
-Project: GamePhysicsForUnity2019
+The code bundle for this video course is available at - https://github.com/PacktPublishing/Unity-2019-3D-Game-Physics-V-
 
-1. **An Introduction to Game Physics for Unity 2019** (Assets\Sections\Section_01\)
-2. **Unity 2D Physics Components** (Assets\Sections\Section_02\)
-3. **Unity 3D Physics Components**  (Assets\Sections\Section_03\)
-4. **Unity C# Physics Programming** (Assets\Sections\Section_04\)
-5. **Project: Creating An “Angry Birds Clone” 2D Game** (Assets\Sections\Section_05\)
-6. **Project: Creating A “Marble Madness Clone” 3D Game** (Assets\Sections\Section_06\)
+<H2>What You Will Learn</H2>
+<DIV class=book-info-will-learn-text>
+<UL>
+<LI> Get an in-depth understanding of the Unity physics system
+<LI> Learn how and when to integrate physics in your game projects
+<LI> Break down abstract game design mechanics into practical Unity physics solutions
+<LI> Program C# for the most common and powerful physics tasks
+<LI> Create a clone of the Angry Birds 2D game with collision detection and resolution
+<LI> Create a clone of the Marble Madness 3D game driven by physics forces
+<LI> Grasp key advanced topics and understand the future of Unity physics</UL></DIV>
 
-Project: GamePhysicsForUnity2019_Section_07_Video_04
+## Instructions and Navigation
+### Assumed Knowledge
+To fully benefit from the coverage included in this course, you will need:<br/>
+This video course will appeal to new game development hobbyists who want to leverage physics in their first projects, as well as to game development experts who want to add 
 
-7. **Advanced Topics** (Assets\Sections\Section_07\)
+the power of physics to their skillset.
+### Technical Requirements
+This course has the following software requirements:<br/>
+Unity Editor
+Text Editor (Visual Studio, Visual Studio Code, JetBrains Rider, others)
 
 
-About The Author
-=============
 
-Samuel Asher Rivello is a Unity Certified Developer with 19 years of experience creating games and educational software. He loves games! He served on the founding team of “Neopets.com” and led the team of game developers through the company’s acquisition by Viacom/MTV. He created the custom, real-time multiplayer gaming framework for “MyYearbook.com” through its acquisition by Quepasa.   
 
-He has shipped many Unity titles including “Shiftlings” published by the legendary Sierra Games for Xbox, PlayStation, & Steam and “Subway Surfers” created by SYBO Games for Android and iOS. He has taught at American universities including USC and UCLA and has presented at conferences including Adobe Max, FITC, FlashForward, and LA Games Summit. He has served as author and editor for Adobe, Future Publishing UK, O’Reilly, and more. 
+## Related Products
+* [Hands-On Augmented Reality [Video]](https://www.packtpub.com/in/application-development/hands-augmented-reality-video)
 
-Sam’s mission is to educate and entertain with interactive technology and to champion best practices, coding standards, and learning. He now consults for top clients as a Unity Game Developer and Unity Tools Developer to “level-up” interactive projects in gaming, education, and AR/VR. 
+* [Learning Unity Physics](https://www.packtpub.com/in/game-development/learning-unity-physics)
 
-Sam is available for remote, contract hire as a Unity Game Developer, a Unity Tools Developer, and a teacher of Unity.
-
-For resume, portfolio, and contact information visit <a href="http://www.SamuelAsherRivello.com" target="_blank">SamuelAsherRivello.com</a>. 
-
-For any comments and questions or to say hello, tweet me at <a href="https://twitter.com/srivello/" target="_blank">@srivello</a> :)
-
+* [Advanced Game Mechanics in Unity 5 [Video]](https://www.packtpub.com/in/game-development/advanced-game-mechanics-unity-5-video)
