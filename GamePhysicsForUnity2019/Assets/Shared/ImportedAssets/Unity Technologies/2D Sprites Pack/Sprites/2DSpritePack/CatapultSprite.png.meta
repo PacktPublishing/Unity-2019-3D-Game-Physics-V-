@@ -9,7 +9,7 @@ TextureImporter:
       213: 391613382322001202
     second: CatapultSprite_1
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -64,7 +64,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 1024
     resizeAlgorithm: 0
@@ -75,6 +75,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -93,7 +94,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 379a0e27919e8f54d9c6c8e02bb0a15f
+      spriteID: e82e3c44631f04a10800000000000000
       internalID: 1891777058879824526
       vertices: []
       indices: 
@@ -114,7 +115,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93cdaa0a6e9d0094ab74fd76746a1791
+      spriteID: 235979edb4a4f6500800000000000000
       internalID: 391613382322001202
       vertices: []
       indices: 
