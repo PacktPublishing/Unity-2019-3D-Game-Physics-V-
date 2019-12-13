@@ -3,10 +3,14 @@
 namespace RMC.UnityGamePhysics.Sections.Section06.Video02
 {
 	public class CrazyBall : MonoBehaviour
-	{
+	{ 
+		
+//Disable a harmless warning shown by the code editor
+#pragma warning disable 0414 // The field is assigned but its value is never used
 		[SerializeField]
 		private bool _isDebug = false;
-
+#pragma warning restore
+		
 		[SerializeField]
 		private float _speed = 20;
 

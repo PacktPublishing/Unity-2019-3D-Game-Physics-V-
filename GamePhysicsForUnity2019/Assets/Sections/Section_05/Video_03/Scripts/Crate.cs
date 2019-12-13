@@ -10,9 +10,12 @@ namespace RMC.UnityGamePhysics.Sections.Section05.Video03
 		[SerializeField]
 		private SpriteRenderer _spriteRenderer = null;
 
+//Disable a harmless warning shown by the code editor
+#pragma warning disable 0414 // The field is assigned but its value is never used
 		[SerializeField]
 		private Sprite _idleSprite = null;
-
+#pragma warning restore
+		
 		[SerializeField]
 		private Sprite _hitSprite = null;
 
