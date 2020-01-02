@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Unity.Physics;
 using Unity.Entities;
 using Unity.Mathematics;
@@ -14,7 +15,11 @@ public class SpawnRandomPhysicsBodies : MonoBehaviour
     public GameObject prefab;
     public float3 range;
     public int count;
+    public float delayBetweenSpawns = 0.01f;
 
+    private NativeArray<float3> positions;
+    private NativeArray<quaternion> rotations;
+    
     void OnEnable()
     {
         if (this.enabled)
@@ -23,19 +28,42 @@ public class SpawnRandomPhysicsBodies : MonoBehaviour
             Entity sourceEntity = GameObjectConversionUtility.ConvertGameObjectHierarchy(prefab, World.Active);
             var entityManager = World.Active.EntityManager;
 
-            var positions = new NativeArray<float3>(count, Allocator.Temp);
-            var rotations = new NativeArray<quaternion>(count, Allocator.Temp);
+            positions = new NativeArray<float3>(count, Allocator.Persistent);    
+            rotations = new NativeArray<quaternion>(count, Allocator.Persistent);
+            
             RandomPointsOnCircle(transform.position, range, ref positions, ref rotations);
 
             BlobAssetReference<Collider> sourceCollider = entityManager.GetComponentData<PhysicsCollider>(sourceEntity).Value;
             for (int i = 0; i < count; i++)
             {
-                var instance = entityManager.Instantiate(sourceEntity);
-                entityManager.SetComponentData(instance, new Translation { Value = positions[i] });
-                entityManager.SetComponentData(instance, new Rotation { Value = rotations[i] });
-                entityManager.SetComponentData(instance, new PhysicsCollider { Value = sourceCollider });
+                StartCoroutine(CreateOneNewEntity(
+                    entityManager, 
+                    sourceEntity, 
+                    positions,
+                    i, 
+                    rotations, 
+                    sourceCollider, 
+                    delayBetweenSpawns, 
+                    i == count -1));
             }
 
+        }
+    }
+
+    private static IEnumerator CreateOneNewEntity(EntityManager entityManager, Entity sourceEntity, 
+        NativeArray<float3> positions, int i, NativeArray<quaternion> rotations, 
+        BlobAssetReference<Collider> sourceCollider, float delayBetweenSpawns, bool isLast)
+    {
+        
+        yield return new WaitForSeconds(delayBetweenSpawns * i);
+        
+        var instance = entityManager.Instantiate(sourceEntity);
+        entityManager.SetComponentData(instance, new Translation {Value = positions[i]});
+        entityManager.SetComponentData(instance, new Rotation {Value = rotations[i]});
+        entityManager.SetComponentData(instance, new PhysicsCollider {Value = sourceCollider});
+
+        if (isLast)
+        {
             positions.Dispose();
             rotations.Dispose();
         }
