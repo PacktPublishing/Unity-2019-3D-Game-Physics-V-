@@ -9,6 +9,7 @@ using UnityEngine;
 using Collider = Unity.Physics.Collider;
 using Material = UnityEngine.Material;
 using Mesh = UnityEngine.Mesh;
+#pragma warning disable 618
 
 /// <summary>
 /// Helper for demos set up in C# rather than in the editor

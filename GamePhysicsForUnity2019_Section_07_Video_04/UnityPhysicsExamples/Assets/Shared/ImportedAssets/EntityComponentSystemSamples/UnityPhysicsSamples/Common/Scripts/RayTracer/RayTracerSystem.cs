@@ -6,6 +6,7 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
 using UnityEngine;
+#pragma warning disable 618
 
 namespace Unity.Physics.Extensions
 {
