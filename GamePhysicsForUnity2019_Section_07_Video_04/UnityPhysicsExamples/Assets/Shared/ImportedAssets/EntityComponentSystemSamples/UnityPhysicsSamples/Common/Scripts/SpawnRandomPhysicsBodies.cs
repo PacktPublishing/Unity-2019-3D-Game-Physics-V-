@@ -20,7 +20,7 @@ public class SpawnRandomPhysicsBodies : MonoBehaviour
     private NativeArray<float3> positions;
     private NativeArray<quaternion> rotations;
     
-    void OnEnable()
+    protected void OnEnable()
     {
         if (this.enabled)
         {
@@ -50,6 +50,11 @@ public class SpawnRandomPhysicsBodies : MonoBehaviour
         }
     }
 
+    protected void OnDestroy()
+    {
+        DestroyNativeArrays(positions, rotations);
+    }
+
     private static IEnumerator CreateOneNewEntity(EntityManager entityManager, Entity sourceEntity, 
         NativeArray<float3> positions, int i, NativeArray<quaternion> rotations, 
         BlobAssetReference<Collider> sourceCollider, float delayBetweenSpawns, bool isLast)
@@ -64,8 +69,26 @@ public class SpawnRandomPhysicsBodies : MonoBehaviour
 
         if (isLast)
         {
-            positions.Dispose();
-            rotations.Dispose();
+            DestroyNativeArrays(positions, rotations);
+        }
+    }
+
+    private static void DestroyNativeArrays(NativeArray<float3> positions, NativeArray<quaternion> rotations)
+    {
+        try
+        {
+            if (positions != null)
+            {
+                positions.Dispose();
+            }
+            if (rotations != null)
+            {
+                rotations.Dispose();
+            }
+        } 
+        catch (Exception)
+        {
+            // Object already disposed properly
         }
     }
 
