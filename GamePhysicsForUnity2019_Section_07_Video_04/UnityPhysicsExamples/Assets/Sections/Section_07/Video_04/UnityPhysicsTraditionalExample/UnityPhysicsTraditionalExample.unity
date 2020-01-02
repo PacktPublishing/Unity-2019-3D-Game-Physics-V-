@@ -493,10 +493,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1014199673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Script: {fileID: 11500000, guid: 140a4ee5d3253224a9e854c61748f606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UsePipelineSettings: 1
+  IgnoreTriggers: 1
 --- !u!1 &1290463250
 GameObject:
   m_ObjectHideFlags: 0
