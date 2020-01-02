@@ -81,9 +81,6 @@ fabric.properties
 [Bb]uilds/
 [Ll]ogs/
 
-# Added by srivello
-[Pp]rojectSettings/
-
 # Never ignore Asset meta data
 ![Aa]ssets/**/*.meta
 
